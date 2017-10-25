@@ -1,0 +1,17 @@
+{
+    "projectName": "ApexBootcamp",
+    "username": "anders.windell@atginfo.com.apex.bootcamp",
+    "id": "d03b9650-b9d8-11e7-b6e0-33e453a1858f",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://na73.salesforce.com",
+    "workspace": "C:\\Users\\WindellAnders\\Documents",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "StaticResource"
+    ]
+}
