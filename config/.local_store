@@ -1,14 +1,16 @@
 {
     "DayTwoGitExample.cls": {
-        "createdById": "0051I000000zlxUQAQ",
-        "createdByName": "Anders Windell",
-        "createdDate": "2017-10-25T23:37:05.000Z",
-        "fileName": "unpackaged/classes/DayTwoGitExample.cls",
-        "fullName": "DayTwoGitExample",
         "id": "01p1I000007b9Y2QAI",
+        "name": "DayTwoGitExample",
+        "createdDate": "2017-10-25T23:37:05.000+0000",
+        "createdById": "0051I000000zlxUQAQ",
+        "namespacePrefix": null,
         "lastModifiedById": "0051I000000zlxUQAQ",
+        "lastModifiedDate": "2017-10-25T23:49:13.000+0000",
+        "fullName": "DayTwoGitExample",
+        "fileName": "unpackaged/classes/DayTwoGitExample.cls",
+        "createdByName": "Anders Windell",
         "lastModifiedByName": "Anders Windell",
-        "lastModifiedDate": "2017-10-25T23:37:05.000Z",
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
