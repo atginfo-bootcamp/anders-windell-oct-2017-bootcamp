@@ -30,5 +30,21 @@
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
+    },
+    "Day4CreateAccountsWithContacts.cls": {
+        "id": "01p1I000008ncvkQAA",
+        "name": "Day4CreateAccountsWithContacts",
+        "createdDate": "2017-10-31T22:15:18.000+0000",
+        "createdById": "0051I000000zlxUQAQ",
+        "namespacePrefix": null,
+        "lastModifiedById": "0051I000000zlxUQAQ",
+        "lastModifiedDate": "2017-10-31T23:51:58.000+0000",
+        "fullName": "Day4CreateAccountsWithContacts",
+        "fileName": "unpackaged/classes/Day4CreateAccountsWithContacts.cls",
+        "createdByName": "Anders Windell",
+        "lastModifiedByName": "Anders Windell",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
     }
 }
