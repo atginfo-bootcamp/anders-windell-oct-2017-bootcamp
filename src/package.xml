@@ -3,6 +3,7 @@
 	<types>
 		<members>DayTwoGitExample</members>
 		<members>Day3ListsAndLoops</members>
+		<members>Day4CreateAccountsWithContacts</members>
 		<name>ApexClass</name>
 	</types>
 	<version>36.0</version>
