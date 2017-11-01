@@ -7,5 +7,9 @@
 		<members>Day5Maps</members>
 		<name>ApexClass</name>
 	</types>
+	<types>
+		<members>LeadTrigger</members>
+		<name>ApexTrigger</name>
+	</types>
 	<version>36.0</version>
 </Package>
