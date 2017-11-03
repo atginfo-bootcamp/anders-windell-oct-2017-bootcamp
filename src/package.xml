@@ -5,10 +5,12 @@
 		<members>Day3ListsAndLoops</members>
 		<members>Day4CreateAccountsWithContacts</members>
 		<members>Day5Maps</members>
+		<members>ContactTriggerHelper</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
 		<members>LeadTrigger</members>
+		<members>ContactTrigger</members>
 		<name>ApexTrigger</name>
 	</types>
 	<version>36.0</version>
