@@ -6,11 +6,13 @@
 		<members>Day4CreateAccountsWithContacts</members>
 		<members>Day5Maps</members>
 		<members>ContactTriggerHelper</members>
+		<members>AccountTriggerHelper</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
 		<members>LeadTrigger</members>
 		<members>ContactTrigger</members>
+		<members>AccountTrigger</members>
 		<name>ApexTrigger</name>
 	</types>
 	<version>36.0</version>

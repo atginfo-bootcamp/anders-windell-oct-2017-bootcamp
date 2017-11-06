@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"update",
+				"updateAccountNumberOfContacts"
+			],
+			[
+				"Acco",
+				"AccountId"
+			],
+			[
 				"createdacc",
 				"createdAccounts"
 			],
@@ -149,7 +157,10 @@
 			}
 		},
 		{
+			"contents": "trigger LeadTrigger on Lead (before insert, before update, before delete, after insert, after update, after delete, after undelete) {\n\n\tSystem.debug('Trigger.isInsert: ' + Trigger.isInsert);\n\tSystem.debug('Trigger.isUpdate: ' + Trigger.isUpdate);\n\tSystem.debug('Trigger.isDelete: ' + Trigger.isDelete);\n\tSystem.debug('Trigger.isUndelete: ' + Trigger.isUndelete);\n\n\n\tSystem.debug('Trigger.isAfter: ' + Trigger.isAfter);\n\tSystem.debug('Trigger.isBefore: ' + Trigger.isBefore);\n\n\tList<Lead> leads = Trigger.new;\n\tMap<Id, Lead> leadMap = Trigger.newMap;\n\tList<Lead> oldLeads = Trigger.old;\n\tMap<Id, Lead> oldLeadMap = Trigger.oldMap;\n\n\tSystem.debug('Trigger.new ' + Trigger.new);\n\tSystem.debug('Trigger.newMap ' + Trigger.newMap);\n\tSystem.debug('Trigger.old ' + Trigger.old);\n\tSystem.debug('Trigger.oldMap ' + Trigger.oldMap);\n\n\t//Common way to choose what code to call and when\n\tif(Trigger.isBefore && trigger.isInsert){\n\t\t//call code to do stuff\n\n\t\t//Change first lead title to 'King' - NO DML NEEDED IN BEFORE CONTEXT\n\t\tleads[0].Title = 'King';\n\n\t}else if (Trigger.isAfter && trigger.isUpdate){\n\t\t//Call different code\n\t\tleads[0].Title = leads[0].Id;\n\t}\n}",
 			"file": "src/triggers/LeadTrigger.trigger",
+			"file_size": 1154,
+			"file_write_time": 131540538906051510,
 			"settings":
 			{
 				"buffer_size": 1154,
@@ -158,12 +169,23 @@
 			}
 		},
 		{
-			"contents": "17:41:44:002 USER_DEBUG [17]|DEBUG|Trigger.new (Lead:{Id=null,\n IsDeleted=false,\n MasterRecordId=null,\n Salutation=null,\n FirstName=null,\n LastName=DIFFERENT NAME,\n Title=King,\n Company=Test,\n Street=null,\n City=null,\n State=null,\n PostalCode=null,\n Country=null,\n Latitude=null,\n Longitude=null,\n GeocodeAccuracy=null,\n Phone=null,\n MobilePhone=null,\n Fax=null,\n Email=null,\n Website=null,\n PhotoUrl=null,\n Description=null,\n LeadSource=null,\n Status=Open - Not Contacted,\n Industry=null,\n Rating=null,\n AnnualRevenue=null,\n NumberOfEmployees=null,\n OwnerId=0051I000000zlxUQAQ,\n HasOptedOutOfEmail=false,\n IsConverted=false,\n ConvertedDate=null,\n ConvertedAccountId=null,\n ConvertedContactId=null,\n ConvertedOpportunityId=null,\n IsUnreadByOwner=false,\n CreatedDate=null,\n CreatedById=null,\n LastModifiedDate=null,\n LastModifiedById=null,\n SystemModstamp=null,\n LastActivityDate=null,\n DoNotCall=false,\n CreatedByID=null,\n LastModifiedByID=null,\n HasOptedOutOfFax=false,\n LastViewedDate=null,\n LastReferencedDate=null,\n LastTransferDate=null,\n Jigsaw=null,\n JigsawContactId=null,\n CleanStatus=Pending,\n CompanyDunsNumber=null,\n DandbCompanyId=null,\n EmailBouncedReason=null,\n EmailBouncedDate=null,\n SICCode__c=null,\n ProductInterest__c=null,\n Primary__c=null,\n CurrentGenerators__c=null,\n NumberofLocations__c=null})",
+			"contents": "trigger ContactTrigger on Contact (after insert, after update, after delete) {\n\n\tif(Trigger.isAfter && Trigger.isInsert){\n\t\tContactTriggerHelper.handleAfterInsert(Trigger.new);\n\t}else if(Trigger.isAfter && Trigger.isUpdate){\n\t\tContactTriggerHelper.handleAfterUpdate(Trigger.new, Trigger.oldMap);\t\n\t}else if(Trigger.isAfter && Trigger.isDelete){\n\t\tContactTriggerHelper.handleAfterDelete(Trigger.old);\t\n\t}\n}",
+			"file": "src/triggers/ContactTrigger.trigger",
+			"file_size": 405,
+			"file_write_time": 131541338997908043,
 			"settings":
 			{
-				"buffer_size": 1317,
-				"line_ending": "Windows",
-				"name": "17:41:44:002 USER_DEBUG [17]|DEBUG|Trigger.new (Le"
+				"buffer_size": 405,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/classes/ContactTriggerHelper.cls",
+			"settings":
+			{
+				"buffer_size": 1653,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -319,7 +341,7 @@
 	],
 	"find":
 	{
-		"height": 53.0
+		"height": 30.0
 	},
 	"find_in_files":
 	{
@@ -333,6 +355,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"handleAfterInsert",
 			",",
 			"new",
 			"isInsert",
@@ -357,7 +380,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -386,7 +409,7 @@
 						"translation.y": 640.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -408,13 +431,14 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax"
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -430,8 +454,65 @@
 						"selection":
 						[
 							[
-								1149,
-								1149
+								630,
+								630
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/triggers/ContactTrigger.trigger",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 405,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								344,
+								344
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/classes/ContactTriggerHelper.cls",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1653,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								672,
+								672
 							]
 						],
 						"settings":
@@ -443,34 +524,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1317,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								605,
-								605
-							]
-						],
-						"settings":
-						{
-							"auto_name": "17:41:44:002 USER_DEBUG [17]|DEBUG|Trigger.new (Le",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
 					"type": "text"
 				}
 			]
