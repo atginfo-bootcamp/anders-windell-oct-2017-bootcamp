@@ -5,7 +5,10 @@ public with sharing class AccountTriggerHelper {
 	}
 	public static void handleBeforeUpdate(List<Account> newAccounts, Map<Id, Account> oldAccountMap){
 		if(!changedRecords(newAccounts, oldAccountMap).isEmpty()){
+			System.debug('Something changed, re-running code');
 			markAccountAsHot(newAccounts);
+		}else{
+			System.debug('Nothing changed, not running any code');
 		}
 	}
 
@@ -13,6 +16,8 @@ public with sharing class AccountTriggerHelper {
 		for(Account account : accounts){
 			if(account.AnnualRevenue >= 500000){
 				account.Rating = 'Hot';
+			}else{
+				account.Rating = null;
 			}
 		}
 	}
