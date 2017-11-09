@@ -126,5 +126,37 @@
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
+    },
+    "ApexBootcampUnitTest.cls": {
+        "id": "01p1I000009q2dOQAQ",
+        "name": "ApexBootcampUnitTest",
+        "createdDate": "2017-11-08T22:23:25.000+0000",
+        "createdById": "0051I000000zlxUQAQ",
+        "namespacePrefix": null,
+        "lastModifiedById": "0051I000000zlxUQAQ",
+        "lastModifiedDate": "2017-11-08T22:41:19.000+0000",
+        "fullName": "ApexBootcampUnitTest",
+        "fileName": "unpackaged/classes/ApexBootcampUnitTest.cls",
+        "createdByName": "Anders Windell",
+        "lastModifiedByName": "Anders Windell",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
+    },
+    "ContactTriggerHelperTests.cls": {
+        "id": "01p1I000009q5BBQAY",
+        "name": "ContactTriggerHelperTests",
+        "createdDate": "2017-11-08T23:01:11.000+0000",
+        "createdById": "0051I000000zlxUQAQ",
+        "namespacePrefix": null,
+        "lastModifiedById": "0051I000000zlxUQAQ",
+        "lastModifiedDate": "2017-11-09T00:00:50.000+0000",
+        "fullName": "ContactTriggerHelperTests",
+        "fileName": "unpackaged/classes/ContactTriggerHelperTests.cls",
+        "createdByName": "Anders Windell",
+        "lastModifiedByName": "Anders Windell",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
     }
 }
