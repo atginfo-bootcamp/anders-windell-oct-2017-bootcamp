@@ -8,6 +8,8 @@
 		<members>ContactTriggerHelper</members>
 		<members>AccountTriggerHelper</members>
 		<members>LeadTriggerHelper</members>
+		<members>ApexBootcampUnitTest</members>
+		<members>ContactTriggerHelperTests</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
