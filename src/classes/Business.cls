@@ -23,12 +23,14 @@ public with sharing class Business {
 		employeeList.addAll(employees);
 	}
 
-	public void removeEmployee(Integer employeeId){
+	public Boolean removeEmployee(Integer employeeId){
 		for(Integer i=0;i<employeeList.size();i++){
 			if(employeeList[i].getEmployeeId() == employeeId){
 				employeeList.remove(i);
+				return true;
 			}
 		}
+		return false;
 	}
 
 	public List<Employee> getEmployees(){
@@ -51,6 +53,15 @@ public with sharing class Business {
 		// Add employee to destination location
 		// Return true if success, false if employee not found
 
+		Employee transferEmployee = fromLocation.getEmployeeById(employeeId);
+		
+		if(transferEmployee != null && fromLocation.removeEmployee(employeeId)){
+			toLocation.addEmployee(transferEmployee);
+			
+			if(toLocation.getEmployeeById(employeeId) != null){
+				return true;
+			}
+		}
 		return false;
 	}
 
