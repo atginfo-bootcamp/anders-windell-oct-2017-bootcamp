@@ -1,0 +1,253 @@
+41.0 APEX_CODE,FINEST;APEX_PROFILING,FINEST;CALLOUT,FINEST;DB,FINEST;SYSTEM,FINE;VALIDATION,INFO;VISUALFORCE,NONE;WAVE,INFO;WORKFLOW,FINER
+Execute Anonymous: LocationManagement.createLocationAndEmployees();
+15:16:22.2 (2206990)|USER_INFO|[EXTERNAL]|0051I000000zlxU|anders.windell@atginfo.com.apex.bootcamp|Pacific Standard Time|GMT-08:00
+15:16:22.2 (2225610)|EXECUTION_STARTED
+15:16:22.2 (2229048)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+15:16:22.2 (2437867)|HEAP_ALLOCATE|[72]|Bytes:3
+15:16:22.2 (2473398)|HEAP_ALLOCATE|[77]|Bytes:152
+15:16:22.2 (2486041)|HEAP_ALLOCATE|[342]|Bytes:408
+15:16:22.2 (2500515)|HEAP_ALLOCATE|[355]|Bytes:408
+15:16:22.2 (2514222)|HEAP_ALLOCATE|[467]|Bytes:48
+15:16:22.2 (2546470)|HEAP_ALLOCATE|[139]|Bytes:6
+15:16:22.2 (2561056)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:1
+15:16:22.2 (2643620)|STATEMENT_EXECUTE|[1]
+15:16:22.2 (2645935)|STATEMENT_EXECUTE|[1]
+15:16:22.2 (2691773)|HEAP_ALLOCATE|[50]|Bytes:5
+15:16:22.2 (2711887)|HEAP_ALLOCATE|[56]|Bytes:5
+15:16:22.2 (2718971)|HEAP_ALLOCATE|[64]|Bytes:7
+15:16:22.2 (2739836)|SYSTEM_MODE_ENTER|false
+15:16:22.2 (2754478)|HEAP_ALLOCATE|[1]|Bytes:5
+15:16:22.2 (9525989)|HEAP_ALLOCATE|[1]|Bytes:10
+15:16:22.2 (9551821)|METHOD_ENTRY|[1]|01p1I00000Biws2|LocationManagement.LocationManagement()
+15:16:22.2 (9557947)|STATEMENT_EXECUTE|[1]
+15:16:22.2 (9562036)|STATEMENT_EXECUTE|[1]
+15:16:22.2 (9572699)|HEAP_ALLOCATE|[1]|Bytes:5
+15:16:22.2 (9582212)|METHOD_EXIT|[1]|LocationManagement
+15:16:22.2 (9603123)|METHOD_ENTRY|[1]|01p1I00000Biws2|LocationManagement.createLocationAndEmployees()
+15:16:22.2 (9643092)|HEAP_ALLOCATE|[4]|Bytes:5
+15:16:22.2 (9648131)|STATEMENT_EXECUTE|[3]
+15:16:22.2 (9649226)|STATEMENT_EXECUTE|[4]
+15:16:22.2 (9652317)|HEAP_ALLOCATE|[4]|Bytes:8
+15:16:22.2 (9655808)|HEAP_ALLOCATE|[4]|Bytes:36
+15:16:22.2 (9658243)|HEAP_ALLOCATE|[4]|Bytes:12
+15:16:22.2 (9675031)|METHOD_ENTRY|[4]|01p1I00000Biws2|LocationManagement.createLocation(String, String, String)
+15:16:22.2 (9746546)|VARIABLE_SCOPE_BEGIN|[15]|name|String|false|false
+15:16:22.2 (9772317)|VARIABLE_ASSIGNMENT|[15]|name|"Missoula"
+15:16:22.2 (9778047)|VARIABLE_SCOPE_BEGIN|[15]|address|String|false|false
+15:16:22.2 (9787772)|VARIABLE_ASSIGNMENT|[15]|address|"216 W Main Street\nMi (16 more) ..."
+15:16:22.2 (9791775)|VARIABLE_SCOPE_BEGIN|[15]|phone|String|false|false
+15:16:22.2 (9797449)|VARIABLE_ASSIGNMENT|[15]|phone|"406-123-4567"
+15:16:22.2 (9808279)|HEAP_ALLOCATE|[16]|Bytes:5
+15:16:22.2 (9812355)|STATEMENT_EXECUTE|[15]
+15:16:22.2 (9813425)|STATEMENT_EXECUTE|[16]
+15:16:22.2 (9815293)|HEAP_ALLOCATE|[16]|Bytes:25
+15:16:22.2 (9827615)|METHOD_ENTRY|[16]|01p1I00000Biws2|LocationManagement.createLocation(String, String, String, String)
+15:16:22.2 (9841009)|VARIABLE_SCOPE_BEGIN|[18]|businessName|String|false|false
+15:16:22.2 (9849271)|VARIABLE_ASSIGNMENT|[18]|businessName|"Advanced Technology  (5 more) ..."
+15:16:22.2 (9853464)|VARIABLE_SCOPE_BEGIN|[18]|name|String|false|false
+15:16:22.2 (9859643)|VARIABLE_ASSIGNMENT|[18]|name|"Missoula"
+15:16:22.2 (9862960)|VARIABLE_SCOPE_BEGIN|[18]|address|String|false|false
+15:16:22.2 (9869924)|VARIABLE_ASSIGNMENT|[18]|address|"216 W Main Street\nMi (16 more) ..."
+15:16:22.2 (9873297)|VARIABLE_SCOPE_BEGIN|[18]|phone|String|false|false
+15:16:22.2 (9878577)|VARIABLE_ASSIGNMENT|[18]|phone|"406-123-4567"
+15:16:22.2 (9887732)|HEAP_ALLOCATE|[19]|Bytes:5
+15:16:22.2 (9891265)|STATEMENT_EXECUTE|[18]
+15:16:22.2 (9892187)|STATEMENT_EXECUTE|[19]
+15:16:22.2 (9913202)|HEAP_ALLOCATE|[19]|Bytes:4
+15:16:22.2 (10019781)|VARIABLE_SCOPE_BEGIN|[19]|location|Business__c|true|false
+15:16:22.2 (10038752)|VARIABLE_ASSIGNMENT|[19]|location|{}|0x6584983a
+15:16:22.2 (10044081)|STATEMENT_EXECUTE|[21]
+15:16:22.2 (10112203)|VARIABLE_ASSIGNMENT|[21]|this.Business_Name__c|"Advanced Technology  (5 more) ..."|0x6584983a
+15:16:22.2 (10122399)|STATEMENT_EXECUTE|[22]
+15:16:22.2 (10145701)|VARIABLE_ASSIGNMENT|[22]|this.Address__c|"216 W Main Street\nMi (16 more) ..."|0x6584983a
+15:16:22.2 (10151426)|STATEMENT_EXECUTE|[23]
+15:16:22.2 (10176775)|VARIABLE_ASSIGNMENT|[23]|this.Name|"Missoula"|0x6584983a
+15:16:22.2 (10181862)|STATEMENT_EXECUTE|[24]
+15:16:22.2 (10197385)|VARIABLE_ASSIGNMENT|[24]|this.Phone_Number__c|"406-123-4567"|0x6584983a
+15:16:22.2 (10202121)|STATEMENT_EXECUTE|[26]
+15:16:22.2 (10212259)|METHOD_EXIT|[16]|01p1I00000Biws2|LocationManagement.createLocation(String, String, String, String)
+15:16:22.2 (10219958)|METHOD_EXIT|[4]|01p1I00000Biws2|LocationManagement.createLocation(String, String, String)
+15:16:22.2 (10225687)|VARIABLE_SCOPE_BEGIN|[4]|missoulaLocation|Business__c|true|false
+15:16:22.2 (10243231)|VARIABLE_ASSIGNMENT|[4]|missoulaLocation|{"Business_Name__c":"Advanced Technology  (5 more) ...","Address__c":"216 W Main Street\nMi (16 more) ...","Name":"Missoula","Phone_Number__c":"406-123-4567"}|0x6584983a
+15:16:22.2 (10249538)|STATEMENT_EXECUTE|[5]
+15:16:22.2 (10280201)|HEAP_ALLOCATE|[5]|Bytes:8
+15:16:22.2 (10290421)|DML_BEGIN|[5]|Op:Upsert|Type:Business__c|Rows:1
+15:16:22.2 (10303668)|LIMIT_USAGE|[5]|DML|1|150
+15:16:22.2 (10315306)|LIMIT_USAGE|[5]|DML_ROWS|1|10000
+15:16:22.2 (10330951)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+15:16:22.2 (46466276)|DML_END|[5]
+15:16:22.2 (46500870)|STATEMENT_EXECUTE|[7]
+15:16:22.2 (46635745)|HEAP_ALLOCATE|[7]|Bytes:4
+15:16:22.2 (46701206)|SYSTEM_CONSTRUCTOR_ENTRY|[7]|<init>()
+15:16:22.2 (46734804)|SYSTEM_CONSTRUCTOR_EXIT|[7]|<init>()
+15:16:22.2 (46741005)|VARIABLE_SCOPE_BEGIN|[7]|employeeList|List<Employee__c>|true|false
+15:16:22.2 (46753414)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:16:22.2 (46771363)|VARIABLE_ASSIGNMENT|[7]|employeeList|[]|0x2ef288b2
+15:16:22.2 (46783956)|STATEMENT_EXECUTE|[9]
+15:16:22.2 (46788183)|HEAP_ALLOCATE|[9]|Bytes:3
+15:16:22.2 (46793287)|HEAP_ALLOCATE|[9]|Bytes:6
+15:16:22.2 (46796127)|HEAP_ALLOCATE|[9]|Bytes:6
+15:16:22.2 (46798747)|HEAP_ALLOCATE|[9]|Bytes:7
+15:16:22.2 (46826641)|METHOD_ENTRY|[9]|01p1I00000Biws2|LocationManagement.createEmployee(Business__c, String, String, String, String)
+15:16:22.2 (46852606)|VARIABLE_SCOPE_BEGIN|[29]|location|Business__c|true|false
+15:16:22.2 (46886179)|VARIABLE_ASSIGNMENT|[29]|location|{"Business_Name__c":"Advanced Technology  (5 more) ...","Address__c":"216 W Main Street\nMi (16 more) ...","Name":"Missoula","Phone_Number__c":"406-123-4567","Id":"a001I000003JWtRQAW"}|0x6584983a
+15:16:22.2 (46893740)|VARIABLE_SCOPE_BEGIN|[29]|firstName|String|false|false
+15:16:22.2 (46900658)|VARIABLE_ASSIGNMENT|[29]|firstName|"Ted"
+15:16:22.2 (46904069)|VARIABLE_SCOPE_BEGIN|[29]|lastName|String|false|false
+15:16:22.2 (46910560)|VARIABLE_ASSIGNMENT|[29]|lastName|"Powers"
+15:16:22.2 (46913485)|VARIABLE_SCOPE_BEGIN|[29]|status|String|false|false
+15:16:22.2 (46919155)|VARIABLE_ASSIGNMENT|[29]|status|"Active"
+15:16:22.2 (46922224)|VARIABLE_SCOPE_BEGIN|[29]|title|String|false|false
+15:16:22.2 (46927453)|VARIABLE_ASSIGNMENT|[29]|title|"Janitor"
+15:16:22.2 (46945941)|HEAP_ALLOCATE|[30]|Bytes:5
+15:16:22.2 (46950730)|STATEMENT_EXECUTE|[29]
+15:16:22.2 (46951977)|STATEMENT_EXECUTE|[30]
+15:16:22.2 (46970310)|HEAP_ALLOCATE|[30]|Bytes:4
+15:16:22.2 (47064094)|VARIABLE_SCOPE_BEGIN|[30]|employee|Employee__c|true|false
+15:16:22.2 (47076769)|VARIABLE_ASSIGNMENT|[30]|employee|{}|0x3248f24f
+15:16:22.2 (47082253)|STATEMENT_EXECUTE|[32]
+15:16:22.2 (47175222)|VARIABLE_ASSIGNMENT|[32]|this.Business_Location__c|"a001I000003JWtRQAW"|0x3248f24f
+15:16:22.2 (47185282)|STATEMENT_EXECUTE|[33]
+15:16:22.2 (47212446)|SYSTEM_METHOD_ENTRY|[33]|com.salesforce.api.interop.apex.bcl.DateMethods.today()
+15:16:22.2 (47260711)|HEAP_ALLOCATE|[33]|Bytes:4
+15:16:22.2 (47270688)|SYSTEM_METHOD_EXIT|[33]|com.salesforce.api.interop.apex.bcl.DateMethods.today()
+15:16:22.2 (47334102)|VARIABLE_ASSIGNMENT|[33]|this.Hire_Date__c|"2017-11-20T00:00:00.000Z"|0x3248f24f
+15:16:22.2 (47340178)|STATEMENT_EXECUTE|[34]
+15:16:22.2 (47353495)|SYSTEM_METHOD_ENTRY|[34]|com.salesforce.api.interop.apex.bcl.DatetimeMethods.now()
+15:16:22.2 (47378691)|HEAP_ALLOCATE|[34]|Bytes:56
+15:16:22.2 (47386774)|SYSTEM_METHOD_EXIT|[34]|com.salesforce.api.interop.apex.bcl.DatetimeMethods.now()
+15:16:22.2 (47426954)|VARIABLE_ASSIGNMENT|[34]|this.Status_Date__c|"2017-11-20T23:16:22.930Z"|0x3248f24f
+15:16:22.2 (47433317)|STATEMENT_EXECUTE|[36]
+15:16:22.2 (47453356)|VARIABLE_ASSIGNMENT|[36]|this.First_Name__c|"Ted"|0x3248f24f
+15:16:22.2 (47458290)|STATEMENT_EXECUTE|[37]
+15:16:22.2 (47474408)|VARIABLE_ASSIGNMENT|[37]|this.Last_Name__c|"Powers"|0x3248f24f
+15:16:22.2 (47479429)|STATEMENT_EXECUTE|[38]
+15:16:22.2 (47494592)|VARIABLE_ASSIGNMENT|[38]|this.Status__c|"Active"|0x3248f24f
+15:16:22.2 (47499700)|STATEMENT_EXECUTE|[39]
+15:16:22.2 (47514654)|VARIABLE_ASSIGNMENT|[39]|this.Title__c|"Janitor"|0x3248f24f
+15:16:22.2 (47519647)|STATEMENT_EXECUTE|[41]
+15:16:22.2 (47528508)|METHOD_EXIT|[9]|01p1I00000Biws2|LocationManagement.createEmployee(Business__c, String, String, String, String)
+15:16:22.2 (47556933)|SYSTEM_METHOD_ENTRY|[9]|List<Employee__c>.add(Object)
+15:16:22.2 (47565428)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:16:22.2 (47573781)|SYSTEM_METHOD_EXIT|[9]|List<Employee__c>.add(Object)
+15:16:22.2 (47577167)|STATEMENT_EXECUTE|[10]
+15:16:22.2 (47580380)|HEAP_ALLOCATE|[10]|Bytes:5
+15:16:22.2 (47584449)|HEAP_ALLOCATE|[10]|Bytes:6
+15:16:22.2 (47588331)|HEAP_ALLOCATE|[10]|Bytes:9
+15:16:22.2 (47594990)|METHOD_ENTRY|[10]|01p1I00000Biws2|LocationManagement.createEmployee(Business__c, String, String, String, String)
+15:16:22.2 (47608178)|VARIABLE_SCOPE_BEGIN|[29]|location|Business__c|true|false
+15:16:22.2 (47625894)|VARIABLE_ASSIGNMENT|[29]|location|{"Business_Name__c":"Advanced Technology  (5 more) ...","Address__c":"216 W Main Street\nMi (16 more) ...","Name":"Missoula","Phone_Number__c":"406-123-4567","Id":"a001I000003JWtRQAW"}|0x6584983a
+15:16:22.2 (47632499)|VARIABLE_SCOPE_BEGIN|[29]|firstName|String|false|false
+15:16:22.2 (47638528)|VARIABLE_ASSIGNMENT|[29]|firstName|"Sandy"
+15:16:22.2 (47642150)|VARIABLE_SCOPE_BEGIN|[29]|lastName|String|false|false
+15:16:22.2 (47647820)|VARIABLE_ASSIGNMENT|[29]|lastName|"Cheeks"
+15:16:22.2 (47650650)|VARIABLE_SCOPE_BEGIN|[29]|status|String|false|false
+15:16:22.2 (47656080)|VARIABLE_ASSIGNMENT|[29]|status|"Active"
+15:16:22.2 (47659138)|VARIABLE_SCOPE_BEGIN|[29]|title|String|false|false
+15:16:22.2 (47664201)|VARIABLE_ASSIGNMENT|[29]|title|"Executive"
+15:16:22.2 (47679296)|HEAP_ALLOCATE|[30]|Bytes:5
+15:16:22.2 (47683259)|STATEMENT_EXECUTE|[29]
+15:16:22.2 (47684149)|STATEMENT_EXECUTE|[30]
+15:16:22.2 (47702261)|HEAP_ALLOCATE|[30]|Bytes:4
+15:16:22.2 (47714258)|VARIABLE_SCOPE_BEGIN|[30]|employee|Employee__c|true|false
+15:16:22.2 (47724173)|VARIABLE_ASSIGNMENT|[30]|employee|{}|0x20bc1934
+15:16:22.2 (47728819)|STATEMENT_EXECUTE|[32]
+15:16:22.2 (47762398)|VARIABLE_ASSIGNMENT|[32]|this.Business_Location__c|"a001I000003JWtRQAW"|0x20bc1934
+15:16:22.2 (47768217)|STATEMENT_EXECUTE|[33]
+15:16:22.2 (47775541)|SYSTEM_METHOD_ENTRY|[33]|com.salesforce.api.interop.apex.bcl.DateMethods.today()
+15:16:22.2 (47786666)|HEAP_ALLOCATE|[33]|Bytes:4
+15:16:22.2 (47793106)|SYSTEM_METHOD_EXIT|[33]|com.salesforce.api.interop.apex.bcl.DateMethods.today()
+15:16:22.2 (47819338)|VARIABLE_ASSIGNMENT|[33]|this.Hire_Date__c|"2017-11-20T00:00:00.000Z"|0x20bc1934
+15:16:22.2 (47825167)|STATEMENT_EXECUTE|[34]
+15:16:22.2 (47830752)|SYSTEM_METHOD_ENTRY|[34]|com.salesforce.api.interop.apex.bcl.DatetimeMethods.now()
+15:16:22.2 (47837058)|HEAP_ALLOCATE|[34]|Bytes:56
+15:16:22.2 (47842290)|SYSTEM_METHOD_EXIT|[34]|com.salesforce.api.interop.apex.bcl.DatetimeMethods.now()
+15:16:22.2 (47866104)|VARIABLE_ASSIGNMENT|[34]|this.Status_Date__c|"2017-11-20T23:16:22.930Z"|0x20bc1934
+15:16:22.2 (47871390)|STATEMENT_EXECUTE|[36]
+15:16:22.2 (47886791)|VARIABLE_ASSIGNMENT|[36]|this.First_Name__c|"Sandy"|0x20bc1934
+15:16:22.2 (47891419)|STATEMENT_EXECUTE|[37]
+15:16:22.2 (47904273)|VARIABLE_ASSIGNMENT|[37]|this.Last_Name__c|"Cheeks"|0x20bc1934
+15:16:22.2 (47908725)|STATEMENT_EXECUTE|[38]
+15:16:22.2 (47921219)|VARIABLE_ASSIGNMENT|[38]|this.Status__c|"Active"|0x20bc1934
+15:16:22.2 (47925924)|STATEMENT_EXECUTE|[39]
+15:16:22.2 (47943885)|VARIABLE_ASSIGNMENT|[39]|this.Title__c|"Executive"|0x20bc1934
+15:16:22.2 (47949370)|STATEMENT_EXECUTE|[41]
+15:16:22.2 (47957452)|METHOD_EXIT|[10]|01p1I00000Biws2|LocationManagement.createEmployee(Business__c, String, String, String, String)
+15:16:22.2 (47974352)|SYSTEM_METHOD_ENTRY|[10]|List<Employee__c>.add(Object)
+15:16:22.2 (47979587)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:16:22.2 (47987048)|SYSTEM_METHOD_EXIT|[10]|List<Employee__c>.add(Object)
+15:16:22.2 (47990498)|STATEMENT_EXECUTE|[12]
+15:16:22.2 (48049370)|DML_BEGIN|[12]|Op:Upsert|Type:Employee__c|Rows:2
+15:16:22.2 (48063575)|LIMIT_USAGE|[12]|DML|2|150
+15:16:22.2 (48078252)|LIMIT_USAGE|[12]|DML_ROWS|3|10000
+15:16:22.2 (48094929)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+15:16:22.2 (75964886)|DML_END|[12]
+15:16:22.2 (76050734)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+15:16:22.2 (76088047)|METHOD_EXIT|[1]|01p1I00000Biws2|LocationManagement.createLocationAndEmployees()
+15:16:22.2 (76096855)|SYSTEM_MODE_EXIT|false
+15:16:22.81 (81101911)|CUMULATIVE_LIMIT_USAGE
+15:16:22.81 (81101911)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 3 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:16:22.81 (81101911)|TOTAL_EMAIL_RECIPIENTS_QUEUED|0
+15:16:22.81 (81101911)|STATIC_VARIABLE_LIST|
+  char[]:DigitTens:0
+  long:serialVersionUID:0
+  String:_sfdcSuppressedCodeLocations:0
+  long:serialVersionUID:0
+  double:MAX_VALUE:0
+  Boolean:FALSE:0
+  long:serialVersionUID:0
+  double:MIN_VALUE:0
+  int:SIZE:0
+  double:NEGATIVE_INFINITY:0
+  int:MAX_VALUE:0
+  String:_sfdcAdditionalCodeLocations:0
+  char[]:digits:0
+  double:NaN:0
+  Boolean:TRUE:0
+  int:MIN_VALUE:0
+  char[]:DigitOnes:0
+  int:BYTES:0
+  int:MIN_EXPONENT:0
+  int[]:sizeTable:0
+  int:MAX_EXPONENT:0
+  int:SIZE:0
+  double:POSITIVE_INFINITY:0
+  double:MIN_NORMAL:0
+  int:BYTES:0
+
+15:16:22.81 (81101911)|CUMULATIVE_LIMIT_USAGE_END
+
+15:16:22.2 (81229776)|CODE_UNIT_FINISHED|execute_anonymous_apex
+15:16:22.2 (82138152)|EXECUTION_FINISHED
+15:16:22.92 (92004337)|CUMULATIVE_PROFILING_BEGIN
+15:16:22.92 (92004337)|CUMULATIVE_PROFILING|No profiling information for SOQL operations
+15:16:22.92 (92004337)|CUMULATIVE_PROFILING|No profiling information for SOSL operations
+15:16:22.92 (92004337)|CUMULATIVE_PROFILING|DML operations|
+Class.LocationManagement.createLocationAndEmployees: line 5, column 1: Upsert: Business__c: executed 1 time in 37 ms
+Class.LocationManagement.createLocationAndEmployees: line 12, column 1: Upsert: List<Employee__c>: executed 1 time in 28 ms
+
+15:16:22.92 (92004337)|CUMULATIVE_PROFILING|method invocations|
+External entry point: public static void execute(): executed 1 time in 74 ms
+AnonymousBlock: line 1, column 1: public static void createLocationAndEmployees(): executed 1 time in 66 ms
+Class.LocationManagement.createLocationAndEmployees: line 9, column 1: public static Employee__c createEmployee(Business__c, String, String, String, String): executed 2 times in 1 ms
+Class.LocationManagement.createLocation: line 16, column 1: public static Business__c createLocation(String, String, String, String): executed 1 time in 0 ms
+Class.LocationManagement.createEmployee: line 33, column 1: public static Date today(): executed 2 times in 0 ms
+Class.LocationManagement.createEmployee: line 34, column 1: public static Datetime now(): executed 2 times in 0 ms
+Class.LocationManagement.createLocationAndEmployees: line 4, column 1: public static Business__c createLocation(String, String, String): executed 1 time in 0 ms
+Class.LocationManagement.createLocationAndEmployees: line 7, column 1: global public List<Employee__c>(): executed 1 time in 0 ms
+Class.LocationManagement.createLocationAndEmployees: line 10, column 1: public static Employee__c createEmployee(Business__c, String, String, String, String): executed 2 times in 0 ms
+
+15:16:22.92 (92004337)|CUMULATIVE_PROFILING_END

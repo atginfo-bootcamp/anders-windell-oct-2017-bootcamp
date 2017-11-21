@@ -13,12 +13,14 @@
 		<members>Person</members>
 		<members>Business</members>
 		<members>Employee</members>
+		<members>LocationManagement</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
 		<members>LeadTrigger</members>
 		<members>ContactTrigger</members>
 		<members>AccountTrigger</members>
+		<members>EmployeeTrigger</members>
 		<name>ApexTrigger</name>
 	</types>
 	<version>36.0</version>
