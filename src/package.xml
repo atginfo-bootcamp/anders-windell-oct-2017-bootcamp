@@ -13,13 +13,20 @@
 		<members>Person</members>
 		<members>Business</members>
 		<members>Employee</members>
+		<members>LocationManagement</members>
+		<members>AccountAndOppCreatorController</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
 		<members>LeadTrigger</members>
 		<members>ContactTrigger</members>
 		<members>AccountTrigger</members>
+		<members>EmployeeTrigger</members>
 		<name>ApexTrigger</name>
+	</types>
+	<types>
+		<members>AccountAndOppCreator</members>
+		<name>ApexPage</name>
 	</types>
 	<version>36.0</version>
 </Package>
