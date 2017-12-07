@@ -16,6 +16,7 @@
 		<members>LocationManagement</members>
 		<members>AccountAndOppCreatorController</members>
 		<members>AccountAndOppCreatorController_TEST</members>
+		<members>PassByReferenceExample</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
