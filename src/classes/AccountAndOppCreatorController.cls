@@ -23,6 +23,11 @@ public with sharing class AccountAndOppCreatorController {
 	}
 
 	public PageReference saveData(){
+		
+		//Populate the opportunity name with the Account name
+		if(opportunity.name == null){
+			opportunity.name = account.name;
+		}
 
 		Boolean error = false;
 		if(account.name == null){
@@ -57,9 +62,6 @@ public with sharing class AccountAndOppCreatorController {
 			createErrorMessage('Opportunity Close Date');
 			error = true;
 		}
-
-		//Populate the opportunity name with the Account name
-		opportunity.name = account.name;
 
 		//Only proceed if none of the required fields were left null
 		if(!error){

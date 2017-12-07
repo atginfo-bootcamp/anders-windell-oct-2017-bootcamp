@@ -15,6 +15,7 @@
 		<members>Employee</members>
 		<members>LocationManagement</members>
 		<members>AccountAndOppCreatorController</members>
+		<members>AccountAndOppCreatorController_TEST</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
