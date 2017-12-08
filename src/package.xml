@@ -21,6 +21,8 @@
 		<members>Dog</members>
 		<members>Fish</members>
 		<members>AnimalGod</members>
+		<members>BackToTheFuture</members>
+		<members>CreateContactForAccountBatch</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
