@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"accounts",
+				"accounts"
+			],
+			[
 				"outpu",
 				"apex:outputPanel"
 			],
@@ -168,26 +172,58 @@
 	"buffers":
 	[
 		{
-			"contents": "<apex:page controller=\"AccountAndOppCreatorController\" showHeader=\"true\" sidebar=\"true\">\n\t<apex:form>\n\t\t<apex:sectionHeader title=\"Create Account with Related\" subtitle=\"Account / Contact / Opportunity\" />\n\t\t<apex:pageBlock title=\"Input Data\" tabStyle=\"Account\">\n\t\t\t<apex:pageMessages id=\"error\"/>\n\t\t\t<apex:pageBlockSection title=\"Account\" columns=\"1\" id=\"Account\">\n\t\t\t\t<apex:inputField value=\"{!account.name}\" />\n\t\t\t\t<apex:inputField value=\"{!account.AccountNumber}\" required=\"True\" />\n\t\t\t\t<apex:inputField value=\"{!account.Description}\" />\n\t\t\t\t<apex:inputField value=\"{!account.Type}\" required=\"True\"/>\n\t\t\t</apex:pageBlockSection>\n\t\t\t<apex:pageBlockSection title=\"Contact\" columns=\"1\" id=\"Contact\">\n\t\t\t\t<apex:inputField value=\"{!contact.FirstName}\" required=\"True\"/>\n\t\t\t\t<apex:inputField value=\"{!contact.LastName}\" />\n\t\t\t\t<apex:inputField value=\"{!contact.Salutation}\" />\n\t\t\t</apex:pageBlockSection>\n\t\t\t<apex:pageBlockSection title=\"Opportunity\" columns=\"1\" id=\"Opportunity\">\n\t\t\t\t<apex:inputField value=\"{!opportunity.name}\" required=\"False\"/>\n\t\t\t\t<apex:inputField value=\"{!opportunity.Type}\" required=\"True\"/>\n\t\t\t\t<apex:inputField value=\"{!opportunity.StageName}\" required=\"True\" />\n\t\t\t\t<apex:inputField value=\"{!opportunity.CloseDate}\" required=\"True\"  />\n\t\t\t</apex:pageBlockSection>\n\n\t\t\t<apex:pageBlockButtons location=\"bottom\">\n                <apex:commandButton action=\"{!saveData}\" value=\"Save Records\" reRender=\"Account,Contact,Opportunity,savedData,error\"/>\n            </apex:pageBlockButtons>\n\n\t\t</apex:pageBlock>\n\n\t\t<apex:outputPanel id=\"savedData\">\n\t\t\t<apex:pageBlock title=\"Created Data\" rendered=\"{!showCreatedDataSection}\">\n\t\t\t\t<apex:pageBlockSection title=\"Account\" columns=\"1\">\n\t\t\t\t\t<apex:outputField value=\"{!savedAccount.name}\" />\n\t\t\t\t\t<apex:outputField value=\"{!savedAccount.AccountNumber}\" />\n\t\t\t\t\t<apex:outputField value=\"{!savedAccount.Description}\" />\n\t\t\t\t\t<apex:outputField value=\"{!savedAccount.Type}\" />\n\t\t\t\t</apex:pageBlockSection>\n\t\t\t\t<apex:pageBlockSection title=\"Contact\" columns=\"1\">\n\t\t\t\t\t<apex:outputField value=\"{!savedContact.FirstName}\" />\n\t\t\t\t\t<apex:outputField value=\"{!savedContact.LastName}\" />\n\t\t\t\t\t<apex:outputField value=\"{!savedContact.Salutation}\" />\n\t\t\t\t</apex:pageBlockSection>\n\t\t\t\t<apex:pageBlockSection title=\"Opportunity\" columns=\"1\">\n\t\t\t\t\t<apex:outputField value=\"{!savedOpportunity.name}\" />\n\t\t\t\t\t<apex:outputField value=\"{!savedOpportunity.Type}\" />\n\t\t\t\t\t<apex:outputField value=\"{!savedOpportunity.StageName}\"  />\n\t\t\t\t\t<apex:outputField value=\"{!savedOpportunity.CloseDate}\"   />\n\t\t\t\t</apex:pageBlockSection>\n\t\t\t</apex:pageBlock>\n\t\t</apex:outputPanel>\n\t</apex:form>\n</apex:page>",
-			"file": "src/pages/AccountAndOppCreator.page",
-			"file_size": 2636,
-			"file_write_time": 131569948418136819,
+			"file": "src/classes/PassByReferenceExample.cls",
 			"settings":
 			{
-				"buffer_size": 2636,
-				"encoding": "UTF-8",
+				"buffer_size": 692,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "public with sharing class AccountAndOppCreatorController {\n\n\tpublic Account account {get; set;}\n\tpublic Contact contact {get; set;}\n\tpublic Opportunity opportunity {get; set;}\n\n\tpublic Account savedAccount {get; set;}\n\tpublic Contact savedContact {get; set;}\n\tpublic Opportunity savedOpportunity {get; set;}\n\n\tpublic Boolean showCreatedDataSection {get; set;}\n\n\tpublic AccountAndOppCreatorController() {\n\t\taccount = new Account();\n\t\tcontact = new Contact();\n\t\topportunity = new Opportunity();\n\n\t\t//Initialize the Data Creation Section to being hidden\n\t\tshowCreatedDataSection = false;\n\n\t\t//Initialize default values\n\t\tinitDefaults();\n\t}\n\n\tpublic PageReference saveData(){\n\n\t\tBoolean error = false;\n\t\tif(account.name == null){\n\t\t\tcreateErrorMessage('Account Name');\n\t\t\terror = true;\n\t\t}\n\t\tif(account.AccountNumber == null){\n\t\t\tcreateErrorMessage('Account Number');\n\t\t\terror = true;\n\t\t}\n\t\tif(account.Type == null){\n\t\t\tcreateErrorMessage('Account Type');\n\t\t\terror = true;\n\t\t}\n\t\tif(contact.FirstName == null){\n\t\t\tcreateErrorMessage('Contact First Name');\n\t\t\terror = true;\n\t\t}\n\t\tif(contact.LastName == null){\n\t\t\tcreateErrorMessage('Contact Last Name');\n\t\t\terror = true;\n\t\t}\n\t\tif(opportunity.Type == null){\n\t\t\tcreateErrorMessage('Opportunity Type');\n\t\t\terror = true;\n\t\t}\n\t\tif(opportunity.StageName == null){\n\t\t\tcreateErrorMessage('Opportunity Stage Name');\n\t\t\terror = true;\n\t\t}\n\t\tif(opportunity.CloseDate == null){\n\t\t\tcreateErrorMessage('Opportunity Close Date');\n\t\t\terror = true;\n\t\t}\n\n\t\t//Populate the opportunity name with the Account name\n\t\topportunity.name = account.name;\n\n\t\t//Only proceed if none of the required fields were left null\n\t\tif(!error){\n\t\t\tpostSaveWork();\n\t\t}\n\n\n\t\treturn null;\n\t}\n\n\tprivate void initDefaults(){\n\t\topportunity.StageName = 'Needs Analysis';\n\t\topportunity.CloseDate = System.today().addDays(30);\n\t}\n\n\tprivate void createErrorMessage(String field){\n\t\tApexPages.addMessage(new ApexPages.message(ApexPages.Severity.WARNING, field + ' Must Be Populated'));\n\t}\n\n\tprivate void postSaveWork(){\n\t\ttry{\n\t\t\t//Post success message\n\t\t\tApexPages.addMessage(new ApexPages.message(ApexPages.Severity.CONFIRM, 'Data Saved Succesfully'));\n\n\t\t\t//Insert the new Account, Contact, and Opportunity\n\t\t\tinsert account;\n\n\t\t\t//Link the contact and oppty to the account by populating the AccountID lookup\n\t\t\tcontact.AccountID = account.Id;\n\t\t\topportunity.AccountId = account.Id;\n\n\t\t\tinsert contact;\n\t\t\tinsert opportunity;\n\n\t\t\t//Populate saved data objects.  These will be used to show the saved info at the bottom of the page\n\t\t\tsavedAccount = account;\n\t\t\tsavedContact = contact;\n\t\t\tsavedOpportunity = opportunity;\n\n\t\t\t//Display hidden section\n\t\t\tshowCreatedDataSection = true;\n\n\n\t\t\t//Reinitialize objects and re-set default fields\n\t\t\taccount = new Account();\n\t\t\tcontact = new Contact();\n\t\t\topportunity = new Opportunity();\n\t\t\tinitDefaults();\n\n\t\t}catch(Exception e){\n\t\t\tApexPages.addMessages(e);\n\t\t}\n\n\t}\n\n\n}",
-			"file": "src/classes/AccountAndOppCreatorController.cls",
-			"file_size": 2906,
-			"file_write_time": 131569948045871222,
+			"file": "src/classes/Animal.cls",
 			"settings":
 			{
-				"buffer_size": 2906,
-				"encoding": "UTF-8",
+				"buffer_size": 73,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/classes/Dog.cls",
+			"settings":
+			{
+				"buffer_size": 223,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/classes/Fish.cls",
+			"settings":
+			{
+				"buffer_size": 319,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/classes/AnimalGod.cls",
+			"settings":
+			{
+				"buffer_size": 322,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/classes/BackToTheFuture.cls",
+			"settings":
+			{
+				"buffer_size": 314,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/classes/CreateContactForAccountBatch.cls",
+			"settings":
+			{
+				"buffer_size": 909,
 				"line_ending": "Unix"
 			}
 		}
@@ -267,11 +303,13 @@
 	[
 		"/C/Users/WindellAnders/Documents/ApexBootcamp",
 		"/C/Users/WindellAnders/Documents/ApexBootcamp/src",
-		"/C/Users/WindellAnders/Documents/ApexBootcamp/src/classes",
 		"/C/Users/WindellAnders/Documents/ApexBootcamp/src/triggers"
 	],
 	"file_history":
 	[
+		"/C/Users/WindellAnders/Documents/ApexBootcamp/src/classes/AccountAndOppCreatorController_TEST.cls",
+		"/C/Users/WindellAnders/Documents/ApexBootcamp/src/classes/AccountAndOppCreatorController.cls",
+		"/C/Users/WindellAnders/Documents/ApexBootcamp/src/pages/AccountAndOppCreator.page",
 		"/C/Users/WindellAnders/Documents/ApexBootcamp/src/pages/AccountAndOppCreator.page-meta.xml",
 		"/C/Users/WindellAnders/Documents/ApexBootcamp/src/classes/ApexBootcampUnitTest.cls",
 		"/C/Users/WindellAnders/Documents/ApexBootcamp/src/classes/Person.cls",
@@ -359,7 +397,7 @@
 	],
 	"find":
 	{
-		"height": 30.0
+		"height": 53.0
 	},
 	"find_in_files":
 	{
@@ -373,6 +411,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"AccountAndOppCreatorController_ANDERS",
 			"upsert",
 			"opportunity",
 			"contact",
@@ -413,52 +452,164 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 6,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/pages/AccountAndOppCreator.page",
+					"file": "src/classes/PassByReferenceExample.cls",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2636,
+						"buffer_size": 692,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								991,
-								991
+								248,
+								248
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/MavensMate/sublime/lang/Visualforce.sublime-syntax"
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "src/classes/AccountAndOppCreatorController.cls",
+					"file": "src/classes/Animal.cls",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2906,
+						"buffer_size": 73,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								536,
-								536
+								73,
+								73
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/classes/Dog.cls",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 223,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								219,
+								71
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/classes/Fish.cls",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 319,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								319,
+								319
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/classes/AnimalGod.cls",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 322,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								322,
+								322
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/classes/BackToTheFuture.cls",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 314,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								159,
+								159
 							]
 						],
 						"settings":
@@ -470,6 +621,35 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/classes/CreateContactForAccountBatch.cls",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 909,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								657,
+								657
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1032,7 +1212,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 204.0,
+	"side_bar_width": 236.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
