@@ -366,5 +366,37 @@
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
+    },
+    "OpportunityTrigger.trigger": {
+        "id": "01q1I000001DqmhQAC",
+        "name": "OpportunityTrigger",
+        "createdDate": "2017-12-12T23:10:26.000+0000",
+        "createdById": "0051I000000zlxUQAQ",
+        "namespacePrefix": null,
+        "lastModifiedById": "0051I000000zlxUQAQ",
+        "lastModifiedDate": "2017-12-12T23:15:26.000+0000",
+        "fullName": "OpportunityTrigger",
+        "fileName": "unpackaged/triggers/OpportunityTrigger.trigger",
+        "createdByName": "Anders Windell",
+        "lastModifiedByName": "Anders Windell",
+        "manageableState": "unmanaged",
+        "type": "ApexTrigger",
+        "mmState": "clean"
+    },
+    "OpportunityTriggerHelper.cls": {
+        "id": "01p1I00000FV94AQAT",
+        "name": "OpportunityTriggerHelper",
+        "createdDate": "2017-12-12T23:10:54.000+0000",
+        "createdById": "0051I000000zlxUQAQ",
+        "namespacePrefix": null,
+        "lastModifiedById": "0051I000000zlxUQAQ",
+        "lastModifiedDate": "2017-12-13T17:04:07.000+0000",
+        "fullName": "OpportunityTriggerHelper",
+        "fileName": "unpackaged/classes/OpportunityTriggerHelper.cls",
+        "createdByName": "Anders Windell",
+        "lastModifiedByName": "Anders Windell",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
     }
 }

@@ -23,6 +23,7 @@
 		<members>AnimalGod</members>
 		<members>BackToTheFuture</members>
 		<members>CreateContactForAccountBatch</members>
+		<members>OpportunityTriggerHelper</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
@@ -30,6 +31,7 @@
 		<members>ContactTrigger</members>
 		<members>AccountTrigger</members>
 		<members>EmployeeTrigger</members>
+		<members>OpportunityTrigger</members>
 		<name>ApexTrigger</name>
 	</types>
 	<types>
