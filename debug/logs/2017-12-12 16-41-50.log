@@ -1,0 +1,229 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,FINEST;CALLOUT,FINEST;DB,FINEST;SYSTEM,FINE;VALIDATION,INFO;VISUALFORCE,NONE;WAVE,INFO;WORKFLOW,FINER
+15:41:49.0 (304701)|USER_INFO|[EXTERNAL]|0051I000000zlxU|anders.windell@atginfo.com.apex.bootcamp|Pacific Standard Time|GMT-08:00
+15:41:49.0 (334159)|EXECUTION_STARTED
+15:41:49.0 (338892)|CODE_UNIT_STARTED|[EXTERNAL]|01q1I000001Dqmh|OpportunityTrigger on Opportunity trigger event AfterUpdate for [0061I0000056Klc]
+15:41:49.0 (379026)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+15:41:49.0 (462126)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+15:41:49.0 (1062224)|HEAP_ALLOCATE|[72]|Bytes:3
+15:41:49.0 (1096036)|HEAP_ALLOCATE|[77]|Bytes:152
+15:41:49.0 (1112166)|HEAP_ALLOCATE|[342]|Bytes:408
+15:41:49.0 (1127710)|HEAP_ALLOCATE|[355]|Bytes:408
+15:41:49.0 (1140276)|HEAP_ALLOCATE|[467]|Bytes:48
+15:41:49.0 (1168545)|HEAP_ALLOCATE|[139]|Bytes:6
+15:41:49.0 (1190714)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:41:49.0 (1200609)|VARIABLE_SCOPE_BEGIN|[1]|this|OpportunityTrigger|true|false
+15:41:49.0 (1245080)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x3d801c0
+15:41:49.0 (1284566)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:41:49.0 (1291088)|VARIABLE_SCOPE_BEGIN|[1]|this|OpportunityTrigger|true|false
+15:41:49.0 (1301987)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x3d801c0
+15:41:49.0 (1309072)|STATEMENT_EXECUTE|[1]
+15:41:49.0 (1337055)|HEAP_ALLOCATE|[50]|Bytes:5
+15:41:49.0 (1359094)|HEAP_ALLOCATE|[56]|Bytes:5
+15:41:49.0 (1370396)|HEAP_ALLOCATE|[64]|Bytes:7
+15:41:49.0 (1402489)|STATEMENT_EXECUTE|[5]
+15:41:49.0 (1404160)|STATEMENT_EXECUTE|[6]
+15:41:49.0 (3194296)|HEAP_ALLOCATE|[6]|Bytes:12
+15:41:49.0 (3204509)|HEAP_ALLOCATE|[6]|Bytes:17
+15:41:49.0 (3218270)|METHOD_ENTRY|[1]|01p1I00000FV94A|OpportunityTriggerHelper.OpportunityTriggerHelper()
+15:41:49.0 (3224172)|STATEMENT_EXECUTE|[1]
+15:41:49.0 (3228097)|STATEMENT_EXECUTE|[1]
+15:41:49.0 (3558135)|SYSTEM_MODE_ENTER|false
+15:41:49.0 (3575826)|HEAP_ALLOCATE|[6]|Bytes:5
+15:41:49.0 (3585967)|SYSTEM_MODE_EXIT|false
+15:41:49.0 (3594618)|METHOD_EXIT|[1]|OpportunityTriggerHelper
+15:41:49.0 (3621382)|METHOD_ENTRY|[6]|01p1I00000FV94A|OpportunityTriggerHelper.afterUpdate(List<Opportunity>, Map<Id,Opportunity>)
+15:41:49.0 (3652767)|VARIABLE_SCOPE_BEGIN|[6]|newOpportunities|List<Opportunity>|true|false
+15:41:49.0 (4198195)|VARIABLE_ASSIGNMENT|[6]|newOpportunities|[{"LastModifiedDate":"2017-12-12T23:41:49.000Z","DeliveryInstallation (9 more) ...":"Yet to begin","MainCompetitors__c":"John Deere","AccountId":"0011I000007E0EoQAK","HasOpportunityLineIt (2 more) ...":false,"ForecastCategory":"Closed","IsClosed":true,"CloseDate":"2017-08-27T00:00:00.000Z","Name":"Burlington Textiles  (23 more) ...","HasOpenActivity":false,"ExpectedRevenue":235000.00,"CreatedById":"0051I000000zlxUQAQ","OwnerId":"0051I000000zlxUQAQ","IsWon":true,"TrackingNumber__c":"830150301360","IsDeleted":false,"StageName":"Closed Won","Amount":235000.00,"Probability":100,"OrderNumber__c":"645612","SystemModstamp":"2017-12-12T23:41:49.000Z","Type":"New Customer","CurrentGenerators__c":"John Deere","LeadSource":"Web","CreatedDate":"2017-10-25T22:52:04.000Z","HasOverdueTask":false,"Id":"0061I0000056KlcQAE","ForecastCategoryName":"Closed","IsPrivate":false,"LastModifiedById":"0051I000000zlxUQAQ"}]|0x3b7fdea4
+15:41:49.0 (4221441)|VARIABLE_SCOPE_BEGIN|[6]|oldOpportunities|Map<Id,Opportunity>|true|false
+15:41:49.0 (4563607)|VARIABLE_ASSIGNMENT|[6]|oldOpportunities|{"0061I0000056KlcQAE":{"LastModifiedDate":"2017-12-12T23:41:13.000Z","DeliveryInstallation (9 more) ...":"Yet to begin","MainCompetitors__c":"John Deere","AccountId":"0011I000007E0EoQAK","HasOpportunityLineIt (2 more) ...":false,"ForecastCategory":"Pipeline","IsClosed":false,"CloseDate":"2017-08-27T00:00:00.000Z","Name":"Burlington Textiles  (23 more) ...","HasOpenActivity":false,"ExpectedRevenue":23500.00,"CreatedById":"0051I000000zlxUQAQ","OwnerId":"0051I000000zlxUQAQ","IsWon":false,"TrackingNumber__c":"830150301360","IsDeleted":false,"StageName":"Qualification","Amount":235000.00,"Probability":10,"OrderNumber__c":"645612","SystemModstamp":"2017-12-12T23:41:13.000Z","Type":"New Customer","CurrentGenerators__c":"John Deere","LeadSource":"Web","CreatedDate":"2017-10-25T22:52:04.000Z","HasOverdueTask":false,"Id":"0061I0000056KlcQAE","ForecastCategoryName":"Pipeline","IsPrivate":false,"LastModifiedById":"0051I000000zlxUQAQ"}}|0x2a0b38e0
+15:41:49.0 (4590281)|SYSTEM_MODE_ENTER|false
+15:41:49.0 (4597295)|HEAP_ALLOCATE|[7]|Bytes:5
+15:41:49.0 (4602591)|STATEMENT_EXECUTE|[6]
+15:41:49.0 (4603691)|STATEMENT_EXECUTE|[7]
+15:41:49.0 (4620245)|METHOD_ENTRY|[7]|01p1I00000FV94A|OpportunityTriggerHelper.changedToClosedWon(List<Opportunity>, Map<Id,Opportunity>)
+15:41:49.0 (4657924)|VARIABLE_SCOPE_BEGIN|[25]|newOpportunities|List<Opportunity>|true|false
+15:41:49.0 (4870720)|VARIABLE_ASSIGNMENT|[25]|newOpportunities|[{"LastModifiedDate":"2017-12-12T23:41:49.000Z","DeliveryInstallation (9 more) ...":"Yet to begin","MainCompetitors__c":"John Deere","AccountId":"0011I000007E0EoQAK","HasOpportunityLineIt (2 more) ...":false,"ForecastCategory":"Closed","IsClosed":true,"CloseDate":"2017-08-27T00:00:00.000Z","Name":"Burlington Textiles  (23 more) ...","HasOpenActivity":false,"ExpectedRevenue":235000.00,"CreatedById":"0051I000000zlxUQAQ","OwnerId":"0051I000000zlxUQAQ","IsWon":true,"TrackingNumber__c":"830150301360","IsDeleted":false,"StageName":"Closed Won","Amount":235000.00,"Probability":100,"OrderNumber__c":"645612","SystemModstamp":"2017-12-12T23:41:49.000Z","Type":"New Customer","CurrentGenerators__c":"John Deere","LeadSource":"Web","CreatedDate":"2017-10-25T22:52:04.000Z","HasOverdueTask":false,"Id":"0061I0000056KlcQAE","ForecastCategoryName":"Closed","IsPrivate":false,"LastModifiedById":"0051I000000zlxUQAQ"}]|0x3b7fdea4
+15:41:49.0 (4892658)|VARIABLE_SCOPE_BEGIN|[25]|oldOpportunities|Map<Id,Opportunity>|true|false
+15:41:49.0 (5098883)|VARIABLE_ASSIGNMENT|[25]|oldOpportunities|{"0061I0000056KlcQAE":{"LastModifiedDate":"2017-12-12T23:41:13.000Z","DeliveryInstallation (9 more) ...":"Yet to begin","MainCompetitors__c":"John Deere","AccountId":"0011I000007E0EoQAK","HasOpportunityLineIt (2 more) ...":false,"ForecastCategory":"Pipeline","IsClosed":false,"CloseDate":"2017-08-27T00:00:00.000Z","Name":"Burlington Textiles  (23 more) ...","HasOpenActivity":false,"ExpectedRevenue":23500.00,"CreatedById":"0051I000000zlxUQAQ","OwnerId":"0051I000000zlxUQAQ","IsWon":false,"TrackingNumber__c":"830150301360","IsDeleted":false,"StageName":"Qualification","Amount":235000.00,"Probability":10,"OrderNumber__c":"645612","SystemModstamp":"2017-12-12T23:41:13.000Z","Type":"New Customer","CurrentGenerators__c":"John Deere","LeadSource":"Web","CreatedDate":"2017-10-25T22:52:04.000Z","HasOverdueTask":false,"Id":"0061I0000056KlcQAE","ForecastCategoryName":"Pipeline","IsPrivate":false,"LastModifiedById":"0051I000000zlxUQAQ"}}|0x2a0b38e0
+15:41:49.0 (5123063)|HEAP_ALLOCATE|[26]|Bytes:5
+15:41:49.0 (5127561)|STATEMENT_EXECUTE|[25]
+15:41:49.0 (5128599)|STATEMENT_EXECUTE|[26]
+15:41:49.0 (5146559)|HEAP_ALLOCATE|[26]|Bytes:4
+15:41:49.0 (5186896)|SYSTEM_CONSTRUCTOR_ENTRY|[26]|<init>()
+15:41:49.0 (5208315)|SYSTEM_CONSTRUCTOR_EXIT|[26]|<init>()
+15:41:49.0 (5212888)|VARIABLE_SCOPE_BEGIN|[26]|oppsToCreateContracts|List<Opportunity>|true|false
+15:41:49.0 (5221838)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:41:49.0 (5228821)|VARIABLE_ASSIGNMENT|[26]|oppsToCreateContracts|[]|0x4703e67b
+15:41:49.0 (5233651)|STATEMENT_EXECUTE|[28]
+15:41:49.0 (5236545)|HEAP_ALLOCATE|[28]|Bytes:35
+15:41:49.0 (5279584)|SYSTEM_METHOD_ENTRY|[28]|String.valueOf(Object)
+15:41:49.0 (5574137)|HEAP_ALLOCATE|[28]|Bytes:1047
+15:41:49.0 (5600769)|SYSTEM_METHOD_EXIT|[28]|String.valueOf(Object)
+15:41:49.0 (5616959)|HEAP_ALLOCATE|[28]|Bytes:1082
+15:41:49.0 (5635421)|SYSTEM_METHOD_ENTRY|[28]|System.debug(ANY)
+15:41:49.0 (5642668)|USER_DEBUG|[28]|DEBUG|Changed To Closed Won - New Values (Opportunity:{Id=0061I0000056KlcQAE, IsDeleted=false, AccountId=0011I000007E0EoQAK, IsPrivate=false, Name=Burlington Textiles Weaving Plant Generator, Description=null, StageName=Closed Won, Amount=235000.00, Probability=100, ExpectedRevenue=235000.00, TotalOpportunityQuantity=null, CloseDate=2017-08-27 00:00:00, Type=New Customer, NextStep=null, LeadSource=Web, IsClosed=true, IsWon=true, ForecastCategory=Closed, ForecastCategoryName=Closed, CampaignId=null, HasOpportunityLineItem=false, Pricebook2Id=null, OwnerId=0051I000000zlxUQAQ, CreatedDate=2017-10-25 22:52:04, CreatedById=0051I000000zlxUQAQ, LastModifiedDate=2017-12-12 23:41:49, LastModifiedById=0051I000000zlxUQAQ, SystemModstamp=2017-12-12 23:41:49, LastActivityDate=null, FiscalYear=null, FiscalQuarter=null, LastViewedDate=null, LastReferencedDate=null, ContractId=null, HasOpenActivity=false, HasOverdueTask=false, DeliveryInstallationStatus__c=Yet to begin, TrackingNumber__c=830150301360, OrderNumber__c=645612, CurrentGenerators__c=John Deere, MainCompetitors__c=John Deere})
+15:41:49.0 (5660934)|SYSTEM_METHOD_EXIT|[28]|System.debug(ANY)
+15:41:49.0 (5664975)|STATEMENT_EXECUTE|[29]
+15:41:49.0 (5667987)|HEAP_ALLOCATE|[29]|Bytes:35
+15:41:49.0 (5683991)|SYSTEM_METHOD_ENTRY|[29]|String.valueOf(Object)
+15:41:49.0 (5917740)|HEAP_ALLOCATE|[29]|Bytes:1073
+15:41:49.0 (5935173)|SYSTEM_METHOD_EXIT|[29]|String.valueOf(Object)
+15:41:49.0 (5943859)|HEAP_ALLOCATE|[29]|Bytes:1108
+15:41:49.0 (5952180)|SYSTEM_METHOD_ENTRY|[29]|System.debug(ANY)
+15:41:49.0 (5956069)|USER_DEBUG|[29]|DEBUG|Changed To Closed Won - Old Values {0061I0000056KlcQAE=Opportunity:{Id=0061I0000056KlcQAE, IsDeleted=false, AccountId=0011I000007E0EoQAK, IsPrivate=false, Name=Burlington Textiles Weaving Plant Generator, Description=null, StageName=Qualification, Amount=235000.00, Probability=10, ExpectedRevenue=23500.00, TotalOpportunityQuantity=null, CloseDate=2017-08-27 00:00:00, Type=New Customer, NextStep=null, LeadSource=Web, IsClosed=false, IsWon=false, ForecastCategory=Pipeline, ForecastCategoryName=Pipeline, CampaignId=null, HasOpportunityLineItem=false, Pricebook2Id=null, OwnerId=0051I000000zlxUQAQ, CreatedDate=2017-10-25 22:52:04, CreatedById=0051I000000zlxUQAQ, LastModifiedDate=2017-12-12 23:41:13, LastModifiedById=0051I000000zlxUQAQ, SystemModstamp=2017-12-12 23:41:13, LastActivityDate=null, FiscalYear=null, FiscalQuarter=null, LastViewedDate=null, LastReferencedDate=null, ContractId=null, HasOpenActivity=false, HasOverdueTask=false, DeliveryInstallationStatus__c=Yet to begin, TrackingNumber__c=830150301360, OrderNumber__c=645612, CurrentGenerators__c=John Deere, MainCompetitors__c=John Deere}}
+15:41:49.0 (5973340)|SYSTEM_METHOD_EXIT|[29]|System.debug(ANY)
+15:41:49.0 (5985537)|SYSTEM_METHOD_ENTRY|[31]|List<Opportunity>.iterator()
+15:41:49.0 (6097866)|SYSTEM_METHOD_EXIT|[31]|List<Opportunity>.iterator()
+15:41:49.0 (6117091)|SYSTEM_METHOD_ENTRY|[31]|system.ListIterator.hasNext()
+15:41:49.0 (6127891)|HEAP_ALLOCATE|[31]|Bytes:5
+15:41:49.0 (6135092)|SYSTEM_METHOD_EXIT|[31]|system.ListIterator.hasNext()
+15:41:49.0 (6153628)|VARIABLE_SCOPE_BEGIN|[31]|opp|Opportunity|true|false
+15:41:49.0 (6379519)|VARIABLE_ASSIGNMENT|[31]|opp|{"LastModifiedDate":"2017-12-12T23:41:49.000Z","DeliveryInstallation (9 more) ...":"Yet to begin","MainCompetitors__c":"John Deere","AccountId":"0011I000007E0EoQAK","HasOpportunityLineIt (2 more) ...":false,"ForecastCategory":"Closed","IsClosed":true,"CloseDate":"2017-08-27T00:00:00.000Z","Name":"Burlington Textiles  (23 more) ...","HasOpenActivity":false,"ExpectedRevenue":235000.00,"CreatedById":"0051I000000zlxUQAQ","OwnerId":"0051I000000zlxUQAQ","IsWon":true,"TrackingNumber__c":"830150301360","IsDeleted":false,"StageName":"Closed Won","Amount":235000.00,"Probability":100,"OrderNumber__c":"645612","SystemModstamp":"2017-12-12T23:41:49.000Z","Type":"New Customer","CurrentGenerators__c":"John Deere","LeadSource":"Web","CreatedDate":"2017-10-25T22:52:04.000Z","HasOverdueTask":false,"Id":"0061I0000056KlcQAE","ForecastCategoryName":"Closed","IsPrivate":false,"LastModifiedById":"0051I000000zlxUQAQ"}|0xe26ace7
+15:41:49.0 (6396828)|STATEMENT_EXECUTE|[31]
+15:41:49.0 (6416814)|HEAP_ALLOCATE|[32]|Bytes:10
+15:41:49.0 (6481884)|SYSTEM_METHOD_ENTRY|[32]|Map<Id,Opportunity>.get(Object)
+15:41:49.0 (6506427)|SYSTEM_METHOD_EXIT|[32]|Map<Id,Opportunity>.get(Object)
+15:41:49.0 (6521087)|STATEMENT_EXECUTE|[32]
+15:41:49.0 (6522207)|STATEMENT_EXECUTE|[33]
+15:41:49.0 (6530507)|SYSTEM_METHOD_ENTRY|[33]|List<Opportunity>.add(Object)
+15:41:49.0 (6542839)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:41:49.0 (6551653)|SYSTEM_METHOD_EXIT|[33]|List<Opportunity>.add(Object)
+15:41:49.0 (6558458)|SYSTEM_METHOD_ENTRY|[31]|system.ListIterator.hasNext()
+15:41:49.0 (6565898)|HEAP_ALLOCATE|[31]|Bytes:5
+15:41:49.0 (6571055)|SYSTEM_METHOD_EXIT|[31]|system.ListIterator.hasNext()
+15:41:49.0 (6579869)|VARIABLE_ASSIGNMENT|[31]|opp|null|
+15:41:49.0 (6586600)|SYSTEM_METHOD_ENTRY|[37]|List<Opportunity>.size()
+15:41:49.0 (6596857)|SYSTEM_METHOD_EXIT|[37]|List<Opportunity>.size()
+15:41:49.0 (6601520)|STATEMENT_EXECUTE|[37]
+15:41:49.0 (6602536)|STATEMENT_EXECUTE|[38]
+15:41:49.0 (6605238)|HEAP_ALLOCATE|[38]|Bytes:34
+15:41:49.0 (6621618)|SYSTEM_METHOD_ENTRY|[38]|String.valueOf(Object)
+15:41:49.0 (6855339)|HEAP_ALLOCATE|[38]|Bytes:1047
+15:41:49.0 (6873608)|SYSTEM_METHOD_EXIT|[38]|String.valueOf(Object)
+15:41:49.0 (6882055)|HEAP_ALLOCATE|[38]|Bytes:1081
+15:41:49.0 (6891049)|SYSTEM_METHOD_ENTRY|[38]|System.debug(ANY)
+15:41:49.0 (6895634)|USER_DEBUG|[38]|DEBUG|Opps To Create Contracts - Update (Opportunity:{Id=0061I0000056KlcQAE, IsDeleted=false, AccountId=0011I000007E0EoQAK, IsPrivate=false, Name=Burlington Textiles Weaving Plant Generator, Description=null, StageName=Closed Won, Amount=235000.00, Probability=100, ExpectedRevenue=235000.00, TotalOpportunityQuantity=null, CloseDate=2017-08-27 00:00:00, Type=New Customer, NextStep=null, LeadSource=Web, IsClosed=true, IsWon=true, ForecastCategory=Closed, ForecastCategoryName=Closed, CampaignId=null, HasOpportunityLineItem=false, Pricebook2Id=null, OwnerId=0051I000000zlxUQAQ, CreatedDate=2017-10-25 22:52:04, CreatedById=0051I000000zlxUQAQ, LastModifiedDate=2017-12-12 23:41:49, LastModifiedById=0051I000000zlxUQAQ, SystemModstamp=2017-12-12 23:41:49, LastActivityDate=null, FiscalYear=null, FiscalQuarter=null, LastViewedDate=null, LastReferencedDate=null, ContractId=null, HasOpenActivity=false, HasOverdueTask=false, DeliveryInstallationStatus__c=Yet to begin, TrackingNumber__c=830150301360, OrderNumber__c=645612, CurrentGenerators__c=John Deere, MainCompetitors__c=John Deere})
+15:41:49.0 (6923438)|SYSTEM_METHOD_EXIT|[38]|System.debug(ANY)
+15:41:49.0 (6927372)|STATEMENT_EXECUTE|[39]
+15:41:49.0 (6936931)|METHOD_ENTRY|[39]|01p1I00000FV94A|OpportunityTriggerHelper.createContracts(List<Opportunity>)
+15:41:49.0 (6955909)|VARIABLE_SCOPE_BEGIN|[44]|validOpportunities|List<Opportunity>|true|false
+15:41:49.0 (7173771)|VARIABLE_ASSIGNMENT|[44]|validOpportunities|[{"LastModifiedDate":"2017-12-12T23:41:49.000Z","DeliveryInstallation (9 more) ...":"Yet to begin","MainCompetitors__c":"John Deere","AccountId":"0011I000007E0EoQAK","HasOpportunityLineIt (2 more) ...":false,"ForecastCategory":"Closed","IsClosed":true,"CloseDate":"2017-08-27T00:00:00.000Z","Name":"Burlington Textiles  (23 more) ...","HasOpenActivity":false,"ExpectedRevenue":235000.00,"CreatedById":"0051I000000zlxUQAQ","OwnerId":"0051I000000zlxUQAQ","IsWon":true,"TrackingNumber__c":"830150301360","IsDeleted":false,"StageName":"Closed Won","Amount":235000.00,"Probability":100,"OrderNumber__c":"645612","SystemModstamp":"2017-12-12T23:41:49.000Z","Type":"New Customer","CurrentGenerators__c":"John Deere","LeadSource":"Web","CreatedDate":"2017-10-25T22:52:04.000Z","HasOverdueTask":false,"Id":"0061I0000056KlcQAE","ForecastCategoryName":"Closed","IsPrivate":false,"LastModifiedById":"0051I000000zlxUQAQ"}]|0x4703e67b
+15:41:49.0 (7199288)|HEAP_ALLOCATE|[46]|Bytes:5
+15:41:49.0 (7203906)|STATEMENT_EXECUTE|[44]
+15:41:49.0 (7205080)|STATEMENT_EXECUTE|[46]
+15:41:49.0 (7241504)|HEAP_ALLOCATE|[46]|Bytes:4
+15:41:49.0 (7264599)|SYSTEM_CONSTRUCTOR_ENTRY|[46]|<init>()
+15:41:49.0 (7279511)|SYSTEM_CONSTRUCTOR_EXIT|[46]|<init>()
+15:41:49.0 (7283678)|VARIABLE_SCOPE_BEGIN|[46]|contractsToInsert|List<Contract>|true|false
+15:41:49.0 (7291556)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:41:49.0 (7298493)|VARIABLE_ASSIGNMENT|[46]|contractsToInsert|[]|0x27bd332c
+15:41:49.0 (7308567)|SYSTEM_METHOD_ENTRY|[48]|List<Opportunity>.iterator()
+15:41:49.0 (7322422)|SYSTEM_METHOD_EXIT|[48]|List<Opportunity>.iterator()
+15:41:49.0 (7329711)|SYSTEM_METHOD_ENTRY|[48]|system.ListIterator.hasNext()
+15:41:49.0 (7336596)|HEAP_ALLOCATE|[48]|Bytes:5
+15:41:49.0 (7341878)|SYSTEM_METHOD_EXIT|[48]|system.ListIterator.hasNext()
+15:41:49.0 (7353319)|VARIABLE_SCOPE_BEGIN|[48]|opp|Opportunity|true|false
+15:41:49.0 (7574123)|VARIABLE_ASSIGNMENT|[48]|opp|{"LastModifiedDate":"2017-12-12T23:41:49.000Z","DeliveryInstallation (9 more) ...":"Yet to begin","MainCompetitors__c":"John Deere","AccountId":"0011I000007E0EoQAK","HasOpportunityLineIt (2 more) ...":false,"ForecastCategory":"Closed","IsClosed":true,"CloseDate":"2017-08-27T00:00:00.000Z","Name":"Burlington Textiles  (23 more) ...","HasOpenActivity":false,"ExpectedRevenue":235000.00,"CreatedById":"0051I000000zlxUQAQ","OwnerId":"0051I000000zlxUQAQ","IsWon":true,"TrackingNumber__c":"830150301360","IsDeleted":false,"StageName":"Closed Won","Amount":235000.00,"Probability":100,"OrderNumber__c":"645612","SystemModstamp":"2017-12-12T23:41:49.000Z","Type":"New Customer","CurrentGenerators__c":"John Deere","LeadSource":"Web","CreatedDate":"2017-10-25T22:52:04.000Z","HasOverdueTask":false,"Id":"0061I0000056KlcQAE","ForecastCategoryName":"Closed","IsPrivate":false,"LastModifiedById":"0051I000000zlxUQAQ"}|0xe26ace7
+15:41:49.0 (7590901)|STATEMENT_EXECUTE|[48]
+15:41:49.0 (7592041)|STATEMENT_EXECUTE|[49]
+15:41:49.0 (7606058)|HEAP_ALLOCATE|[49]|Bytes:4
+15:41:49.0 (7685380)|VARIABLE_SCOPE_BEGIN|[49]|contract|Contract|true|false
+15:41:49.0 (7697193)|VARIABLE_ASSIGNMENT|[49]|contract|{}|0x72d6e141
+15:41:49.0 (7701896)|STATEMENT_EXECUTE|[51]
+15:41:49.0 (8446399)|VARIABLE_ASSIGNMENT|[51]|this.AccountId|"0011I000007E0EoQAK"|0x72d6e141
+15:41:49.0 (8455123)|STATEMENT_EXECUTE|[52]
+15:41:49.0 (8466759)|SYSTEM_METHOD_ENTRY|[52]|System.today()
+15:41:49.0 (8489755)|HEAP_ALLOCATE|[52]|Bytes:4
+15:41:49.0 (8497094)|SYSTEM_METHOD_EXIT|[52]|System.today()
+15:41:49.0 (8531666)|VARIABLE_ASSIGNMENT|[52]|this.StartDate|"2017-12-12T00:00:00.000Z"|0x72d6e141
+15:41:49.0 (8537947)|STATEMENT_EXECUTE|[53]
+15:41:49.0 (8557634)|VARIABLE_ASSIGNMENT|[53]|this.ContractTerm|12|0x72d6e141
+15:41:49.0 (8563454)|STATEMENT_EXECUTE|[55]
+15:41:49.0 (8581952)|SYSTEM_METHOD_ENTRY|[55]|List<Contract>.add(Object)
+15:41:49.0 (8596386)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:41:49.0 (8606541)|SYSTEM_METHOD_EXIT|[55]|List<Contract>.add(Object)
+15:41:49.0 (8614118)|SYSTEM_METHOD_ENTRY|[48]|system.ListIterator.hasNext()
+15:41:49.0 (8621997)|HEAP_ALLOCATE|[48]|Bytes:5
+15:41:49.0 (8627609)|SYSTEM_METHOD_EXIT|[48]|system.ListIterator.hasNext()
+15:41:49.0 (8636646)|VARIABLE_ASSIGNMENT|[48]|opp|null|
+15:41:49.0 (8643766)|SYSTEM_METHOD_ENTRY|[58]|List<Contract>.size()
+15:41:49.0 (8653512)|SYSTEM_METHOD_EXIT|[58]|List<Contract>.size()
+15:41:49.0 (8657952)|STATEMENT_EXECUTE|[58]
+15:41:49.0 (8658885)|STATEMENT_EXECUTE|[59]
+15:41:49.0 (8661811)|HEAP_ALLOCATE|[59]|Bytes:20
+15:41:49.0 (8678584)|SYSTEM_METHOD_ENTRY|[59]|String.valueOf(Object)
+15:41:49.0 (8714481)|HEAP_ALLOCATE|[59]|Bytes:89
+15:41:49.0 (8728433)|SYSTEM_METHOD_EXIT|[59]|String.valueOf(Object)
+15:41:49.0 (8735442)|HEAP_ALLOCATE|[59]|Bytes:109
+15:41:49.0 (8743855)|SYSTEM_METHOD_ENTRY|[59]|System.debug(ANY)
+15:41:49.0 (8747725)|USER_DEBUG|[59]|DEBUG|Contracts To Insert (Contract:{AccountId=0011I000007E0EoQAK, StartDate=2017-12-12 00:00:00, ContractTerm=12})
+15:41:49.0 (8753344)|SYSTEM_METHOD_EXIT|[59]|System.debug(ANY)
+15:41:49.0 (8762394)|METHOD_EXIT|[39]|01p1I00000FV94A|OpportunityTriggerHelper.createContracts(List<Opportunity>)
+15:41:49.0 (8769743)|METHOD_EXIT|[7]|01p1I00000FV94A|OpportunityTriggerHelper.changedToClosedWon(List<Opportunity>, Map<Id,Opportunity>)
+15:41:49.0 (8774484)|SYSTEM_MODE_EXIT|false
+15:41:49.0 (8779791)|METHOD_EXIT|[6]|01p1I00000FV94A|OpportunityTriggerHelper.afterUpdate(List<Opportunity>, Map<Id,Opportunity>)
+15:41:49.8 (8788100)|CUMULATIVE_LIMIT_USAGE
+15:41:49.8 (8788100)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:41:49.8 (8788100)|TOTAL_EMAIL_RECIPIENTS_QUEUED|0
+15:41:49.8 (8788100)|STATIC_VARIABLE_LIST|
+  char[]:DigitTens:0
+  long:serialVersionUID:0
+  long:serialVersionUID:0
+  double:MAX_VALUE:0
+  Boolean:FALSE:0
+  String:_sfdcAdditionalCodeLocations:0
+  long:serialVersionUID:0
+  double:MIN_VALUE:0
+  int:SIZE:0
+  double:NEGATIVE_INFINITY:0
+  int:MAX_VALUE:0
+  String:_sfdcSuppressedCodeLocations:0
+  char[]:digits:0
+  double:NaN:0
+  Boolean:TRUE:0
+  int:MIN_VALUE:0
+  char[]:DigitOnes:0
+  int:BYTES:0
+  int:MIN_EXPONENT:0
+  int[]:sizeTable:0
+  int:MAX_EXPONENT:0
+  int:SIZE:0
+  double:POSITIVE_INFINITY:0
+  double:MIN_NORMAL:0
+  int:BYTES:0
+
+15:41:49.8 (8788100)|CUMULATIVE_LIMIT_USAGE_END
+
+15:41:49.0 (9811622)|CODE_UNIT_FINISHED|OpportunityTrigger on Opportunity trigger event AfterUpdate for [0061I0000056Klc]
+15:41:49.0 (10540702)|EXECUTION_FINISHED
+15:41:49.59 (59812778)|CUMULATIVE_PROFILING_BEGIN
+15:41:49.59 (59812778)|CUMULATIVE_PROFILING|No profiling information for SOQL operations
+15:41:49.59 (59812778)|CUMULATIVE_PROFILING|No profiling information for SOSL operations
+15:41:49.59 (59812778)|CUMULATIVE_PROFILING|No profiling information for DML operations
+15:41:49.59 (59812778)|CUMULATIVE_PROFILING|method invocations|
+External entry point: public void invoke(): executed 1 time in 7 ms
+Trigger.OpportunityTrigger: line 6, column 1: public static void afterUpdate(List<Opportunity>, Map<Id,Opportunity>): executed 1 time in 5 ms
+Class.OpportunityTriggerHelper.afterUpdate: line 7, column 1: public static void changedToClosedWon(List<Opportunity>, Map<Id,Opportunity>): executed 1 time in 4 ms
+Class.OpportunityTriggerHelper.changedToClosedWon: line 39, column 1: public static void createContracts(List<Opportunity>): executed 1 time in 1 ms
+Class.OpportunityTriggerHelper.changedToClosedWon: line 32, column 1: global public Object get(Object): executed 1 time in 0 ms
+Class.OpportunityTriggerHelper.changedToClosedWon: line 33, column 1: global public Object add(Object): executed 1 time in 0 ms
+Class.OpportunityTriggerHelper.changedToClosedWon: line 37, column 1: global public Integer size(): executed 1 time in 0 ms
+Class.OpportunityTriggerHelper.changedToClosedWon: line 38, column 1: public static String valueOf(Object): executed 2 times in 0 ms
+Class.OpportunityTriggerHelper.createContracts: line 46, column 1: global public List<Contract>(): executed 1 time in 0 ms
+Class.OpportunityTriggerHelper.createContracts: line 48, column 1: global public System.Iterator iterator(): executed 3 times in 0 ms
+Class.OpportunityTriggerHelper.createContracts: line 52, column 1: global public static Date today(): executed 1 time in 0 ms
+
+15:41:49.59 (59812778)|CUMULATIVE_PROFILING_END

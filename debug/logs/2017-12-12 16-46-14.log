@@ -1,0 +1,238 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,FINEST;CALLOUT,FINEST;DB,FINEST;SYSTEM,FINE;VALIDATION,INFO;VISUALFORCE,NONE;WAVE,INFO;WORKFLOW,FINER
+15:46:13.0 (342312)|USER_INFO|[EXTERNAL]|0051I000000zlxU|anders.windell@atginfo.com.apex.bootcamp|Pacific Standard Time|GMT-08:00
+15:46:13.0 (372656)|EXECUTION_STARTED
+15:46:13.0 (376135)|CODE_UNIT_STARTED|[EXTERNAL]|01q1I000001Dqmh|OpportunityTrigger on Opportunity trigger event AfterUpdate for [0061I000005Mykz]
+15:46:13.0 (435495)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+15:46:13.0 (583788)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+15:46:13.0 (991529)|HEAP_ALLOCATE|[72]|Bytes:3
+15:46:13.0 (1036691)|HEAP_ALLOCATE|[77]|Bytes:152
+15:46:13.0 (1053694)|HEAP_ALLOCATE|[342]|Bytes:408
+15:46:13.0 (1068351)|HEAP_ALLOCATE|[355]|Bytes:408
+15:46:13.0 (1083967)|HEAP_ALLOCATE|[467]|Bytes:48
+15:46:13.0 (1112922)|HEAP_ALLOCATE|[139]|Bytes:6
+15:46:13.0 (1139277)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:46:13.0 (1147959)|VARIABLE_SCOPE_BEGIN|[1]|this|OpportunityTrigger|true|false
+15:46:13.0 (1195183)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x3619b8b9
+15:46:13.0 (1235591)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:46:13.0 (1242501)|VARIABLE_SCOPE_BEGIN|[1]|this|OpportunityTrigger|true|false
+15:46:13.0 (1252792)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x3619b8b9
+15:46:13.0 (1260880)|STATEMENT_EXECUTE|[1]
+15:46:13.0 (1290670)|HEAP_ALLOCATE|[50]|Bytes:5
+15:46:13.0 (1314991)|HEAP_ALLOCATE|[56]|Bytes:5
+15:46:13.0 (1323298)|HEAP_ALLOCATE|[64]|Bytes:7
+15:46:13.0 (1363224)|STATEMENT_EXECUTE|[5]
+15:46:13.0 (1365900)|STATEMENT_EXECUTE|[6]
+15:46:13.0 (3421452)|HEAP_ALLOCATE|[6]|Bytes:12
+15:46:13.0 (3432182)|HEAP_ALLOCATE|[6]|Bytes:17
+15:46:13.0 (3447281)|METHOD_ENTRY|[1]|01p1I00000FV94A|OpportunityTriggerHelper.OpportunityTriggerHelper()
+15:46:13.0 (3453407)|STATEMENT_EXECUTE|[1]
+15:46:13.0 (3457265)|STATEMENT_EXECUTE|[1]
+15:46:13.0 (3798647)|SYSTEM_MODE_ENTER|false
+15:46:13.0 (3814672)|HEAP_ALLOCATE|[6]|Bytes:5
+15:46:13.0 (3827306)|SYSTEM_MODE_EXIT|false
+15:46:13.0 (3836736)|METHOD_EXIT|[1]|OpportunityTriggerHelper
+15:46:13.0 (3865004)|METHOD_ENTRY|[6]|01p1I00000FV94A|OpportunityTriggerHelper.afterUpdate(List<Opportunity>, Map<Id,Opportunity>)
+15:46:13.0 (3896222)|VARIABLE_SCOPE_BEGIN|[6]|newOpportunities|List<Opportunity>|true|false
+15:46:13.0 (4432435)|VARIABLE_ASSIGNMENT|[6]|newOpportunities|[{"LastModifiedDate":"2017-12-12T23:46:13.000Z","IsDeleted":false,"AccountId":"0011I000007E0EyQAK","HasOpportunityLineIt (2 more) ...":false,"StageName":"Closed Won","Probability":100,"ForecastCategory":"Closed","IsClosed":true,"CloseDate":"2017-12-12T00:00:00.000Z","Name":"Insert Test","SystemModstamp":"2017-12-12T23:46:13.000Z","HasOpenActivity":false,"CreatedById":"0051I000000zlxUQAQ","OwnerId":"0051I000000zlxUQAQ","IsWon":true,"CreatedDate":"2017-12-12T23:44:34.000Z","HasOverdueTask":false,"Id":"0061I000005MykzQAC","ForecastCategoryName":"Closed","IsPrivate":false,"LastModifiedById":"0051I000000zlxUQAQ"}]|0x35cf894c
+15:46:13.0 (4451329)|VARIABLE_SCOPE_BEGIN|[6]|oldOpportunities|Map<Id,Opportunity>|true|false
+15:46:13.0 (4759058)|VARIABLE_ASSIGNMENT|[6]|oldOpportunities|{"0061I000005MykzQAC":{"LastModifiedDate":"2017-12-12T23:45:56.000Z","IsDeleted":false,"AccountId":"0011I000007E0EyQAK","HasOpportunityLineIt (2 more) ...":false,"StageName":"Prospecting","Probability":10,"ForecastCategory":"Pipeline","IsClosed":false,"CloseDate":"2017-12-12T00:00:00.000Z","Name":"Insert Test","SystemModstamp":"2017-12-12T23:45:56.000Z","HasOpenActivity":false,"CreatedById":"0051I000000zlxUQAQ","OwnerId":"0051I000000zlxUQAQ","IsWon":false,"CreatedDate":"2017-12-12T23:44:34.000Z","HasOverdueTask":false,"Id":"0061I000005MykzQAC","ForecastCategoryName":"Pipeline","IsPrivate":false,"LastModifiedById":"0051I000000zlxUQAQ"}}|0x50e59d61
+15:46:13.0 (4782402)|SYSTEM_MODE_ENTER|false
+15:46:13.0 (4788976)|HEAP_ALLOCATE|[7]|Bytes:5
+15:46:13.0 (4794378)|STATEMENT_EXECUTE|[6]
+15:46:13.0 (4795659)|STATEMENT_EXECUTE|[7]
+15:46:13.0 (4812519)|METHOD_ENTRY|[7]|01p1I00000FV94A|OpportunityTriggerHelper.changedToClosedWon(List<Opportunity>, Map<Id,Opportunity>)
+15:46:13.0 (4858905)|VARIABLE_SCOPE_BEGIN|[25]|newOpportunities|List<Opportunity>|true|false
+15:46:13.0 (5093864)|VARIABLE_ASSIGNMENT|[25]|newOpportunities|[{"LastModifiedDate":"2017-12-12T23:46:13.000Z","IsDeleted":false,"AccountId":"0011I000007E0EyQAK","HasOpportunityLineIt (2 more) ...":false,"StageName":"Closed Won","Probability":100,"ForecastCategory":"Closed","IsClosed":true,"CloseDate":"2017-12-12T00:00:00.000Z","Name":"Insert Test","SystemModstamp":"2017-12-12T23:46:13.000Z","HasOpenActivity":false,"CreatedById":"0051I000000zlxUQAQ","OwnerId":"0051I000000zlxUQAQ","IsWon":true,"CreatedDate":"2017-12-12T23:44:34.000Z","HasOverdueTask":false,"Id":"0061I000005MykzQAC","ForecastCategoryName":"Closed","IsPrivate":false,"LastModifiedById":"0051I000000zlxUQAQ"}]|0x35cf894c
+15:46:13.0 (5108575)|VARIABLE_SCOPE_BEGIN|[25]|oldOpportunities|Map<Id,Opportunity>|true|false
+15:46:13.0 (5330762)|VARIABLE_ASSIGNMENT|[25]|oldOpportunities|{"0061I000005MykzQAC":{"LastModifiedDate":"2017-12-12T23:45:56.000Z","IsDeleted":false,"AccountId":"0011I000007E0EyQAK","HasOpportunityLineIt (2 more) ...":false,"StageName":"Prospecting","Probability":10,"ForecastCategory":"Pipeline","IsClosed":false,"CloseDate":"2017-12-12T00:00:00.000Z","Name":"Insert Test","SystemModstamp":"2017-12-12T23:45:56.000Z","HasOpenActivity":false,"CreatedById":"0051I000000zlxUQAQ","OwnerId":"0051I000000zlxUQAQ","IsWon":false,"CreatedDate":"2017-12-12T23:44:34.000Z","HasOverdueTask":false,"Id":"0061I000005MykzQAC","ForecastCategoryName":"Pipeline","IsPrivate":false,"LastModifiedById":"0051I000000zlxUQAQ"}}|0x50e59d61
+15:46:13.0 (5351818)|HEAP_ALLOCATE|[26]|Bytes:5
+15:46:13.0 (5356948)|STATEMENT_EXECUTE|[25]
+15:46:13.0 (5358158)|STATEMENT_EXECUTE|[26]
+15:46:13.0 (5375763)|HEAP_ALLOCATE|[26]|Bytes:4
+15:46:13.0 (5417413)|SYSTEM_CONSTRUCTOR_ENTRY|[26]|<init>()
+15:46:13.0 (5440946)|SYSTEM_CONSTRUCTOR_EXIT|[26]|<init>()
+15:46:13.0 (5445987)|VARIABLE_SCOPE_BEGIN|[26]|oppsToCreateContracts|List<Opportunity>|true|false
+15:46:13.0 (5455005)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:46:13.0 (5461835)|VARIABLE_ASSIGNMENT|[26]|oppsToCreateContracts|[]|0x16554fc4
+15:46:13.0 (5467119)|STATEMENT_EXECUTE|[28]
+15:46:13.0 (5470170)|HEAP_ALLOCATE|[28]|Bytes:35
+15:46:13.0 (5512329)|SYSTEM_METHOD_ENTRY|[28]|String.valueOf(Object)
+15:46:13.0 (5827766)|HEAP_ALLOCATE|[28]|Bytes:968
+15:46:13.0 (5849701)|SYSTEM_METHOD_EXIT|[28]|String.valueOf(Object)
+15:46:13.0 (5866411)|HEAP_ALLOCATE|[28]|Bytes:1003
+15:46:13.0 (6023704)|SYSTEM_METHOD_ENTRY|[28]|System.debug(ANY)
+15:46:13.0 (6034705)|USER_DEBUG|[28]|DEBUG|Changed To Closed Won - New Values (Opportunity:{Id=0061I000005MykzQAC, IsDeleted=false, AccountId=0011I000007E0EyQAK, IsPrivate=false, Name=Insert Test, Description=null, StageName=Closed Won, Amount=null, Probability=100, ExpectedRevenue=null, TotalOpportunityQuantity=null, CloseDate=2017-12-12 00:00:00, Type=null, NextStep=null, LeadSource=null, IsClosed=true, IsWon=true, ForecastCategory=Closed, ForecastCategoryName=Closed, CampaignId=null, HasOpportunityLineItem=false, Pricebook2Id=null, OwnerId=0051I000000zlxUQAQ, CreatedDate=2017-12-12 23:44:34, CreatedById=0051I000000zlxUQAQ, LastModifiedDate=2017-12-12 23:46:13, LastModifiedById=0051I000000zlxUQAQ, SystemModstamp=2017-12-12 23:46:13, LastActivityDate=null, FiscalYear=null, FiscalQuarter=null, LastViewedDate=null, LastReferencedDate=null, ContractId=null, HasOpenActivity=false, HasOverdueTask=false, DeliveryInstallationStatus__c=null, TrackingNumber__c=null, OrderNumber__c=null, CurrentGenerators__c=null, MainCompetitors__c=null})
+15:46:13.0 (6052891)|SYSTEM_METHOD_EXIT|[28]|System.debug(ANY)
+15:46:13.0 (6057426)|STATEMENT_EXECUTE|[29]
+15:46:13.0 (6060799)|HEAP_ALLOCATE|[29]|Bytes:35
+15:46:13.0 (6081843)|SYSTEM_METHOD_ENTRY|[29]|String.valueOf(Object)
+15:46:13.0 (6388402)|HEAP_ALLOCATE|[29]|Bytes:993
+15:46:13.0 (6409270)|SYSTEM_METHOD_EXIT|[29]|String.valueOf(Object)
+15:46:13.0 (6418115)|HEAP_ALLOCATE|[29]|Bytes:1028
+15:46:13.0 (6426986)|SYSTEM_METHOD_ENTRY|[29]|System.debug(ANY)
+15:46:13.0 (6431537)|USER_DEBUG|[29]|DEBUG|Changed To Closed Won - Old Values {0061I000005MykzQAC=Opportunity:{Id=0061I000005MykzQAC, IsDeleted=false, AccountId=0011I000007E0EyQAK, IsPrivate=false, Name=Insert Test, Description=null, StageName=Prospecting, Amount=null, Probability=10, ExpectedRevenue=null, TotalOpportunityQuantity=null, CloseDate=2017-12-12 00:00:00, Type=null, NextStep=null, LeadSource=null, IsClosed=false, IsWon=false, ForecastCategory=Pipeline, ForecastCategoryName=Pipeline, CampaignId=null, HasOpportunityLineItem=false, Pricebook2Id=null, OwnerId=0051I000000zlxUQAQ, CreatedDate=2017-12-12 23:44:34, CreatedById=0051I000000zlxUQAQ, LastModifiedDate=2017-12-12 23:45:56, LastModifiedById=0051I000000zlxUQAQ, SystemModstamp=2017-12-12 23:45:56, LastActivityDate=null, FiscalYear=null, FiscalQuarter=null, LastViewedDate=null, LastReferencedDate=null, ContractId=null, HasOpenActivity=false, HasOverdueTask=false, DeliveryInstallationStatus__c=null, TrackingNumber__c=null, OrderNumber__c=null, CurrentGenerators__c=null, MainCompetitors__c=null}}
+15:46:13.0 (6447315)|SYSTEM_METHOD_EXIT|[29]|System.debug(ANY)
+15:46:13.0 (6458983)|SYSTEM_METHOD_ENTRY|[31]|List<Opportunity>.iterator()
+15:46:13.0 (6579030)|SYSTEM_METHOD_EXIT|[31]|List<Opportunity>.iterator()
+15:46:13.0 (6599412)|SYSTEM_METHOD_ENTRY|[31]|system.ListIterator.hasNext()
+15:46:13.0 (6611155)|HEAP_ALLOCATE|[31]|Bytes:5
+15:46:13.0 (6617900)|SYSTEM_METHOD_EXIT|[31]|system.ListIterator.hasNext()
+15:46:13.0 (6637966)|VARIABLE_SCOPE_BEGIN|[31]|opp|Opportunity|true|false
+15:46:13.0 (6892492)|VARIABLE_ASSIGNMENT|[31]|opp|{"LastModifiedDate":"2017-12-12T23:46:13.000Z","IsDeleted":false,"AccountId":"0011I000007E0EyQAK","HasOpportunityLineIt (2 more) ...":false,"StageName":"Closed Won","Probability":100,"ForecastCategory":"Closed","IsClosed":true,"CloseDate":"2017-12-12T00:00:00.000Z","Name":"Insert Test","SystemModstamp":"2017-12-12T23:46:13.000Z","HasOpenActivity":false,"CreatedById":"0051I000000zlxUQAQ","OwnerId":"0051I000000zlxUQAQ","IsWon":true,"CreatedDate":"2017-12-12T23:44:34.000Z","HasOverdueTask":false,"Id":"0061I000005MykzQAC","ForecastCategoryName":"Closed","IsPrivate":false,"LastModifiedById":"0051I000000zlxUQAQ"}|0x1630e9d0
+15:46:13.0 (6907212)|STATEMENT_EXECUTE|[31]
+15:46:13.0 (6926233)|HEAP_ALLOCATE|[32]|Bytes:10
+15:46:13.0 (6992255)|SYSTEM_METHOD_ENTRY|[32]|Map<Id,Opportunity>.get(Object)
+15:46:13.0 (7018865)|SYSTEM_METHOD_EXIT|[32]|Map<Id,Opportunity>.get(Object)
+15:46:13.0 (7034188)|STATEMENT_EXECUTE|[32]
+15:46:13.0 (7035599)|STATEMENT_EXECUTE|[33]
+15:46:13.0 (7044560)|SYSTEM_METHOD_ENTRY|[33]|List<Opportunity>.add(Object)
+15:46:13.0 (7058007)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:46:13.0 (7066547)|SYSTEM_METHOD_EXIT|[33]|List<Opportunity>.add(Object)
+15:46:13.0 (7073775)|SYSTEM_METHOD_ENTRY|[31]|system.ListIterator.hasNext()
+15:46:13.0 (7081333)|HEAP_ALLOCATE|[31]|Bytes:5
+15:46:13.0 (7086857)|SYSTEM_METHOD_EXIT|[31]|system.ListIterator.hasNext()
+15:46:13.0 (7095184)|VARIABLE_ASSIGNMENT|[31]|opp|null|
+15:46:13.0 (7102172)|SYSTEM_METHOD_ENTRY|[37]|List<Opportunity>.size()
+15:46:13.0 (7112984)|SYSTEM_METHOD_EXIT|[37]|List<Opportunity>.size()
+15:46:13.0 (7117647)|STATEMENT_EXECUTE|[37]
+15:46:13.0 (7118724)|STATEMENT_EXECUTE|[38]
+15:46:13.0 (7121392)|HEAP_ALLOCATE|[38]|Bytes:34
+15:46:13.0 (7136918)|SYSTEM_METHOD_ENTRY|[38]|String.valueOf(Object)
+15:46:13.0 (7387376)|HEAP_ALLOCATE|[38]|Bytes:968
+15:46:13.0 (7404595)|SYSTEM_METHOD_EXIT|[38]|String.valueOf(Object)
+15:46:13.0 (7412978)|HEAP_ALLOCATE|[38]|Bytes:1002
+15:46:13.0 (7421106)|SYSTEM_METHOD_ENTRY|[38]|System.debug(ANY)
+15:46:13.0 (7425397)|USER_DEBUG|[38]|DEBUG|Opps To Create Contracts - Update (Opportunity:{Id=0061I000005MykzQAC, IsDeleted=false, AccountId=0011I000007E0EyQAK, IsPrivate=false, Name=Insert Test, Description=null, StageName=Closed Won, Amount=null, Probability=100, ExpectedRevenue=null, TotalOpportunityQuantity=null, CloseDate=2017-12-12 00:00:00, Type=null, NextStep=null, LeadSource=null, IsClosed=true, IsWon=true, ForecastCategory=Closed, ForecastCategoryName=Closed, CampaignId=null, HasOpportunityLineItem=false, Pricebook2Id=null, OwnerId=0051I000000zlxUQAQ, CreatedDate=2017-12-12 23:44:34, CreatedById=0051I000000zlxUQAQ, LastModifiedDate=2017-12-12 23:46:13, LastModifiedById=0051I000000zlxUQAQ, SystemModstamp=2017-12-12 23:46:13, LastActivityDate=null, FiscalYear=null, FiscalQuarter=null, LastViewedDate=null, LastReferencedDate=null, ContractId=null, HasOpenActivity=false, HasOverdueTask=false, DeliveryInstallationStatus__c=null, TrackingNumber__c=null, OrderNumber__c=null, CurrentGenerators__c=null, MainCompetitors__c=null})
+15:46:13.0 (7441334)|SYSTEM_METHOD_EXIT|[38]|System.debug(ANY)
+15:46:13.0 (7444695)|STATEMENT_EXECUTE|[39]
+15:46:13.0 (7453442)|METHOD_ENTRY|[39]|01p1I00000FV94A|OpportunityTriggerHelper.createContracts(List<Opportunity>)
+15:46:13.0 (7471738)|VARIABLE_SCOPE_BEGIN|[44]|validOpportunities|List<Opportunity>|true|false
+15:46:13.0 (7709423)|VARIABLE_ASSIGNMENT|[44]|validOpportunities|[{"LastModifiedDate":"2017-12-12T23:46:13.000Z","IsDeleted":false,"AccountId":"0011I000007E0EyQAK","HasOpportunityLineIt (2 more) ...":false,"StageName":"Closed Won","Probability":100,"ForecastCategory":"Closed","IsClosed":true,"CloseDate":"2017-12-12T00:00:00.000Z","Name":"Insert Test","SystemModstamp":"2017-12-12T23:46:13.000Z","HasOpenActivity":false,"CreatedById":"0051I000000zlxUQAQ","OwnerId":"0051I000000zlxUQAQ","IsWon":true,"CreatedDate":"2017-12-12T23:44:34.000Z","HasOverdueTask":false,"Id":"0061I000005MykzQAC","ForecastCategoryName":"Closed","IsPrivate":false,"LastModifiedById":"0051I000000zlxUQAQ"}]|0x16554fc4
+15:46:13.0 (7730207)|HEAP_ALLOCATE|[46]|Bytes:5
+15:46:13.0 (7734843)|STATEMENT_EXECUTE|[44]
+15:46:13.0 (7735822)|STATEMENT_EXECUTE|[46]
+15:46:13.0 (7773176)|HEAP_ALLOCATE|[46]|Bytes:4
+15:46:13.0 (7796992)|SYSTEM_CONSTRUCTOR_ENTRY|[46]|<init>()
+15:46:13.0 (7812478)|SYSTEM_CONSTRUCTOR_EXIT|[46]|<init>()
+15:46:13.0 (7816710)|VARIABLE_SCOPE_BEGIN|[46]|contractsToInsert|List<Contract>|true|false
+15:46:13.0 (7828992)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:46:13.0 (7834910)|VARIABLE_ASSIGNMENT|[46]|contractsToInsert|[]|0x2fb600ee
+15:46:13.0 (7844850)|SYSTEM_METHOD_ENTRY|[48]|List<Opportunity>.iterator()
+15:46:13.0 (7858752)|SYSTEM_METHOD_EXIT|[48]|List<Opportunity>.iterator()
+15:46:13.0 (7865936)|SYSTEM_METHOD_ENTRY|[48]|system.ListIterator.hasNext()
+15:46:13.0 (7872824)|HEAP_ALLOCATE|[48]|Bytes:5
+15:46:13.0 (7878242)|SYSTEM_METHOD_EXIT|[48]|system.ListIterator.hasNext()
+15:46:13.0 (7889419)|VARIABLE_SCOPE_BEGIN|[48]|opp|Opportunity|true|false
+15:46:13.0 (8132353)|VARIABLE_ASSIGNMENT|[48]|opp|{"LastModifiedDate":"2017-12-12T23:46:13.000Z","IsDeleted":false,"AccountId":"0011I000007E0EyQAK","HasOpportunityLineIt (2 more) ...":false,"StageName":"Closed Won","Probability":100,"ForecastCategory":"Closed","IsClosed":true,"CloseDate":"2017-12-12T00:00:00.000Z","Name":"Insert Test","SystemModstamp":"2017-12-12T23:46:13.000Z","HasOpenActivity":false,"CreatedById":"0051I000000zlxUQAQ","OwnerId":"0051I000000zlxUQAQ","IsWon":true,"CreatedDate":"2017-12-12T23:44:34.000Z","HasOverdueTask":false,"Id":"0061I000005MykzQAC","ForecastCategoryName":"Closed","IsPrivate":false,"LastModifiedById":"0051I000000zlxUQAQ"}|0x1630e9d0
+15:46:13.0 (8146955)|STATEMENT_EXECUTE|[48]
+15:46:13.0 (8148131)|STATEMENT_EXECUTE|[49]
+15:46:13.0 (8166337)|HEAP_ALLOCATE|[49]|Bytes:4
+15:46:13.0 (8259860)|VARIABLE_SCOPE_BEGIN|[49]|contract|Contract|true|false
+15:46:13.0 (8272855)|VARIABLE_ASSIGNMENT|[49]|contract|{}|0x62d8ebe5
+15:46:13.0 (8278261)|STATEMENT_EXECUTE|[51]
+15:46:13.0 (8905994)|VARIABLE_ASSIGNMENT|[51]|this.AccountId|"0011I000007E0EyQAK"|0x62d8ebe5
+15:46:13.0 (8914930)|STATEMENT_EXECUTE|[52]
+15:46:13.0 (8927339)|SYSTEM_METHOD_ENTRY|[52]|System.today()
+15:46:13.0 (8951178)|HEAP_ALLOCATE|[52]|Bytes:4
+15:46:13.0 (8958920)|SYSTEM_METHOD_EXIT|[52]|System.today()
+15:46:13.0 (8995211)|VARIABLE_ASSIGNMENT|[52]|this.StartDate|"2017-12-12T00:00:00.000Z"|0x62d8ebe5
+15:46:13.0 (9001406)|STATEMENT_EXECUTE|[53]
+15:46:13.0 (9022289)|VARIABLE_ASSIGNMENT|[53]|this.ContractTerm|12|0x62d8ebe5
+15:46:13.0 (9027539)|STATEMENT_EXECUTE|[55]
+15:46:13.0 (9046339)|SYSTEM_METHOD_ENTRY|[55]|List<Contract>.add(Object)
+15:46:13.0 (9061397)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:46:13.0 (9075711)|SYSTEM_METHOD_EXIT|[55]|List<Contract>.add(Object)
+15:46:13.0 (9084371)|SYSTEM_METHOD_ENTRY|[48]|system.ListIterator.hasNext()
+15:46:13.0 (9092533)|HEAP_ALLOCATE|[48]|Bytes:5
+15:46:13.0 (9098522)|SYSTEM_METHOD_EXIT|[48]|system.ListIterator.hasNext()
+15:46:13.0 (9107155)|VARIABLE_ASSIGNMENT|[48]|opp|null|
+15:46:13.0 (9114647)|SYSTEM_METHOD_ENTRY|[58]|List<Contract>.size()
+15:46:13.0 (9125387)|SYSTEM_METHOD_EXIT|[58]|List<Contract>.size()
+15:46:13.0 (9130007)|STATEMENT_EXECUTE|[58]
+15:46:13.0 (9131023)|STATEMENT_EXECUTE|[59]
+15:46:13.0 (9133903)|HEAP_ALLOCATE|[59]|Bytes:20
+15:46:13.0 (9150673)|SYSTEM_METHOD_ENTRY|[59]|String.valueOf(Object)
+15:46:13.0 (9185390)|HEAP_ALLOCATE|[59]|Bytes:89
+15:46:13.0 (9198833)|SYSTEM_METHOD_EXIT|[59]|String.valueOf(Object)
+15:46:13.0 (9206324)|HEAP_ALLOCATE|[59]|Bytes:109
+15:46:13.0 (9215032)|SYSTEM_METHOD_ENTRY|[59]|System.debug(ANY)
+15:46:13.0 (9219131)|USER_DEBUG|[59]|DEBUG|Contracts To Insert (Contract:{AccountId=0011I000007E0EyQAK, StartDate=2017-12-12 00:00:00, ContractTerm=12})
+15:46:13.0 (9225497)|SYSTEM_METHOD_EXIT|[59]|System.debug(ANY)
+15:46:13.0 (9228337)|STATEMENT_EXECUTE|[60]
+15:46:13.0 (9292889)|DML_BEGIN|[60]|Op:Insert|Type:Contract|Rows:1
+15:46:13.0 (9307410)|LIMIT_USAGE|[60]|DML|1|150
+15:46:13.0 (9319005)|LIMIT_USAGE|[60]|DML_ROWS|1|10000
+15:46:13.0 (9334661)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+15:46:13.0 (43630097)|DML_END|[60]
+15:46:13.0 (43688893)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+15:46:13.0 (43723073)|METHOD_EXIT|[39]|01p1I00000FV94A|OpportunityTriggerHelper.createContracts(List<Opportunity>)
+15:46:13.0 (43732795)|METHOD_EXIT|[7]|01p1I00000FV94A|OpportunityTriggerHelper.changedToClosedWon(List<Opportunity>, Map<Id,Opportunity>)
+15:46:13.0 (43739365)|SYSTEM_MODE_EXIT|false
+15:46:13.0 (43747176)|METHOD_EXIT|[6]|01p1I00000FV94A|OpportunityTriggerHelper.afterUpdate(List<Opportunity>, Map<Id,Opportunity>)
+15:46:13.43 (43759286)|CUMULATIVE_LIMIT_USAGE
+15:46:13.43 (43759286)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:46:13.43 (43759286)|TOTAL_EMAIL_RECIPIENTS_QUEUED|0
+15:46:13.43 (43759286)|STATIC_VARIABLE_LIST|
+  char[]:DigitTens:0
+  long:serialVersionUID:0
+  long:serialVersionUID:0
+  double:MAX_VALUE:0
+  Boolean:FALSE:0
+  String:_sfdcAdditionalCodeLocations:0
+  long:serialVersionUID:0
+  double:MIN_VALUE:0
+  int:SIZE:0
+  double:NEGATIVE_INFINITY:0
+  int:MAX_VALUE:0
+  String:_sfdcSuppressedCodeLocations:0
+  char[]:digits:0
+  double:NaN:0
+  Boolean:TRUE:0
+  int:MIN_VALUE:0
+  char[]:DigitOnes:0
+  int:BYTES:0
+  int:MIN_EXPONENT:0
+  int[]:sizeTable:0
+  int:MAX_EXPONENT:0
+  int:SIZE:0
+  double:POSITIVE_INFINITY:0
+  double:MIN_NORMAL:0
+  int:BYTES:0
+
+15:46:13.43 (43759286)|CUMULATIVE_LIMIT_USAGE_END
+
+15:46:13.0 (45556689)|CODE_UNIT_FINISHED|OpportunityTrigger on Opportunity trigger event AfterUpdate for [0061I000005Mykz]
+15:46:13.0 (46304451)|EXECUTION_FINISHED
+15:46:13.99 (99581773)|CUMULATIVE_PROFILING_BEGIN
+15:46:13.99 (99581773)|CUMULATIVE_PROFILING|No profiling information for SOQL operations
+15:46:13.99 (99581773)|CUMULATIVE_PROFILING|No profiling information for SOSL operations
+15:46:13.99 (99581773)|CUMULATIVE_PROFILING|DML operations|
+Class.OpportunityTriggerHelper.createContracts: line 60, column 1: Insert: List<Contract>: executed 1 time in 35 ms
+
+15:46:13.99 (99581773)|CUMULATIVE_PROFILING|method invocations|
+External entry point: public void invoke(): executed 1 time in 43 ms
+Trigger.OpportunityTrigger: line 6, column 1: public static void afterUpdate(List<Opportunity>, Map<Id,Opportunity>): executed 1 time in 40 ms
+Class.OpportunityTriggerHelper.afterUpdate: line 7, column 1: public static void changedToClosedWon(List<Opportunity>, Map<Id,Opportunity>): executed 1 time in 39 ms
+Class.OpportunityTriggerHelper.changedToClosedWon: line 39, column 1: public static void createContracts(List<Opportunity>): executed 1 time in 36 ms
+Class.OpportunityTriggerHelper.changedToClosedWon: line 38, column 1: public static String valueOf(Object): executed 2 times in 1 ms
+Class.OpportunityTriggerHelper.changedToClosedWon: line 29, column 1: public static String valueOf(Object): executed 2 times in 1 ms
+Class.OpportunityTriggerHelper.changedToClosedWon: line 32, column 1: global public Object get(Object): executed 1 time in 0 ms
+Class.OpportunityTriggerHelper.changedToClosedWon: line 33, column 1: global public Object add(Object): executed 1 time in 0 ms
+Class.OpportunityTriggerHelper.changedToClosedWon: line 37, column 1: global public Integer size(): executed 1 time in 0 ms
+Class.OpportunityTriggerHelper.createContracts: line 46, column 1: global public List<Contract>(): executed 1 time in 0 ms
+Class.OpportunityTriggerHelper.createContracts: line 48, column 1: global public System.Iterator iterator(): executed 3 times in 0 ms
+
+15:46:13.99 (99581773)|CUMULATIVE_PROFILING_END
