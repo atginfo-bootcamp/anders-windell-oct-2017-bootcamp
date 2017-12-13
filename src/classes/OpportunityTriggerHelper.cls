@@ -1,14 +1,19 @@
 public with sharing class OpportunityTriggerHelper {
 
+	// After Insert helper method
 	public static void afterInsert(List<Opportunity> newOpportunities){
 		insertIsClosedWon(newOpportunities);
 	}
+
+	// After Update helper method
 	public static void afterUpdate(List<Opportunity> newOpportunities, Map<Id, Opportunity> oldOpportunities){
 		changedToClosedWon(newOpportunities, oldOpportunities);
 	}
 
+	//Method for finding Closed Won opptys and sending those opptys to the createContracts method
 	public static void insertIsClosedWon(List<Opportunity> insertedOpportunities){
 		System.debug('Inserted Opportunities ' + insertedOpportunities);
+
 		List<Opportunity> oppsToCreateContracts = new List<Opportunity>();
 		for(Opportunity opp : insertedOpportunities){
 			if(opp.StageName == 'Closed Won'){
@@ -60,11 +65,11 @@ public with sharing class OpportunityTriggerHelper {
 			insert contractsToInsert;
 			System.debug('Contracts After Insert '+ contractsToInsert);
 
-			createContractRoles(contractsToInsert);
+			createContactRole(contractsToInsert);
 		}
 	}
 
-	public static void createContractRoles(List<Contract> contractList){
+	public static void createContactRole(List<Contract> contractList){
 
 		System.debug('Contract List Initial ' + contractList);
 
