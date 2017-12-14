@@ -24,6 +24,7 @@
 		<members>BackToTheFuture</members>
 		<members>CreateContactForAccountBatch</members>
 		<members>OpportunityTriggerHelper</members>
+		<members>OpportunityTriggerHelperTest</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
