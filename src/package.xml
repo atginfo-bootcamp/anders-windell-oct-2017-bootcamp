@@ -1,43 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
-		<members>DayTwoGitExample</members>
-		<members>Day3ListsAndLoops</members>
-		<members>Day4CreateAccountsWithContacts</members>
-		<members>Day5Maps</members>
-		<members>ContactTriggerHelper</members>
-		<members>AccountTriggerHelper</members>
-		<members>LeadTriggerHelper</members>
-		<members>ApexBootcampUnitTest</members>
-		<members>ContactTriggerHelperTests</members>
-		<members>Person</members>
-		<members>Business</members>
-		<members>Employee</members>
-		<members>LocationManagement</members>
-		<members>AccountAndOppCreatorController</members>
-		<members>AccountAndOppCreatorController_TEST</members>
-		<members>PassByReferenceExample</members>
-		<members>Animal</members>
-		<members>Dog</members>
-		<members>Fish</members>
-		<members>AnimalGod</members>
-		<members>BackToTheFuture</members>
-		<members>CreateContactForAccountBatch</members>
-		<members>OpportunityTriggerHelper</members>
-		<members>OpportunityTriggerHelperTest</members>
+		<members>*</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
-		<members>LeadTrigger</members>
-		<members>ContactTrigger</members>
-		<members>AccountTrigger</members>
-		<members>EmployeeTrigger</members>
-		<members>OpportunityTrigger</members>
+		<members>*</members>
+		<name>ApexComponent</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>ApexPage</name>
+	</types>
+	<types>
+		<members>*</members>
 		<name>ApexTrigger</name>
 	</types>
 	<types>
-		<members>AccountAndOppCreator</members>
-		<name>ApexPage</name>
+		<members>*</members>
+		<name>StaticResource</name>
 	</types>
 	<version>36.0</version>
 </Package>
