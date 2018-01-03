@@ -1,0 +1,229 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,FINEST;CALLOUT,FINEST;DB,FINEST;SYSTEM,FINE;VALIDATION,INFO;VISUALFORCE,NONE;WAVE,INFO;WORKFLOW,FINER
+15:41:55.0 (307945)|USER_INFO|[EXTERNAL]|0051I000000zlxU|anders.windell@atginfo.com.apex.bootcamp|Pacific Standard Time|GMT-08:00
+15:41:55.0 (339277)|EXECUTION_STARTED
+15:41:55.0 (343150)|CODE_UNIT_STARTED|[EXTERNAL]|01q1I000001Dynp|ProductTrigger on Product2 trigger event AfterUpdate for [01t1I0000016vrf]
+15:41:55.0 (394339)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+15:41:55.0 (466502)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+15:41:55.0 (839763)|HEAP_ALLOCATE|[72]|Bytes:3
+15:41:55.0 (882771)|HEAP_ALLOCATE|[77]|Bytes:152
+15:41:55.0 (899403)|HEAP_ALLOCATE|[342]|Bytes:408
+15:41:55.0 (913598)|HEAP_ALLOCATE|[355]|Bytes:408
+15:41:55.0 (926479)|HEAP_ALLOCATE|[467]|Bytes:48
+15:41:55.0 (953653)|HEAP_ALLOCATE|[139]|Bytes:6
+15:41:55.0 (978771)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:41:55.0 (987269)|VARIABLE_SCOPE_BEGIN|[1]|this|ProductTrigger|true|false
+15:41:55.0 (1035876)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x7fe3481a
+15:41:55.0 (1080864)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:41:55.0 (1087125)|VARIABLE_SCOPE_BEGIN|[1]|this|ProductTrigger|true|false
+15:41:55.0 (1098288)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x7fe3481a
+15:41:55.0 (1104918)|STATEMENT_EXECUTE|[1]
+15:41:55.0 (1140000)|HEAP_ALLOCATE|[50]|Bytes:5
+15:41:55.0 (1163940)|HEAP_ALLOCATE|[56]|Bytes:5
+15:41:55.0 (1171810)|HEAP_ALLOCATE|[64]|Bytes:7
+15:41:55.0 (1203509)|STATEMENT_EXECUTE|[3]
+15:41:55.0 (1204808)|STATEMENT_EXECUTE|[4]
+15:41:55.0 (2569069)|HEAP_ALLOCATE|[4]|Bytes:3
+15:41:55.0 (2578154)|HEAP_ALLOCATE|[4]|Bytes:2
+15:41:55.0 (2591634)|METHOD_ENTRY|[1]|01p1I00000FWXW5|ProductTriggerHelper.ProductTriggerHelper()
+15:41:55.0 (2596985)|STATEMENT_EXECUTE|[1]
+15:41:55.0 (2600415)|STATEMENT_EXECUTE|[1]
+15:41:55.0 (2913345)|SYSTEM_MODE_ENTER|false
+15:41:55.0 (2929559)|HEAP_ALLOCATE|[4]|Bytes:5
+15:41:55.0 (2937588)|SYSTEM_MODE_EXIT|false
+15:41:55.0 (2944699)|METHOD_EXIT|[1]|ProductTriggerHelper
+15:41:55.0 (2973390)|METHOD_ENTRY|[4]|01p1I00000FWXW5|ProductTriggerHelper.handleAfterUpdate(List<Product2>, Map<Id,Product2>)
+15:41:55.0 (3000781)|VARIABLE_SCOPE_BEGIN|[3]|products|List<Product2>|true|false
+15:41:55.0 (3486568)|VARIABLE_ASSIGNMENT|[3]|products|[{"LastModifiedDate":"2018-01-02T23:41:55.000Z","IsDeleted":false,"CreatedById":"0051I000000zlxUQAQ","ProductCode":"GC1060-3","IsActive":true,"CreatedDate":"2017-10-25T22:52:04.000Z","Id":"01t1I0000016vrfQAA","LastModifiedById":"0051I000000zlxUQAQ","Name":"GenWatt Diesel 1000k (24 more) ...","SystemModstamp":"2018-01-02T23:41:55.000Z"}]|0x4f9120fe
+15:41:55.0 (3500581)|VARIABLE_SCOPE_BEGIN|[3]|oldProductMap|Map<Id,Product2>|true|false
+15:41:55.0 (3676826)|VARIABLE_ASSIGNMENT|[3]|oldProductMap|{"01t1I0000016vrfQAA":{"LastModifiedDate":"2018-01-02T23:27:58.000Z","IsDeleted":false,"CreatedById":"0051I000000zlxUQAQ","ProductCode":"GC1060-3","IsActive":false,"CreatedDate":"2017-10-25T22:52:04.000Z","Id":"01t1I0000016vrfQAA","LastModifiedById":"0051I000000zlxUQAQ","Name":"GenWatt Diesel 1000k (24 more) ...","SystemModstamp":"2018-01-02T23:27:58.000Z"}}|0x417f6036
+15:41:55.0 (3695084)|SYSTEM_MODE_ENTER|false
+15:41:55.0 (3702380)|HEAP_ALLOCATE|[4]|Bytes:5
+15:41:55.0 (3707327)|STATEMENT_EXECUTE|[3]
+15:41:55.0 (3708438)|STATEMENT_EXECUTE|[4]
+15:41:55.0 (3724219)|METHOD_ENTRY|[4]|01p1I00000FWXW5|ProductTriggerHelper.checkIfNameChanged(List<Product2>, Map<Id,Product2>)
+15:41:55.0 (3760815)|VARIABLE_SCOPE_BEGIN|[7]|products|List<Product2>|true|false
+15:41:55.0 (3906485)|VARIABLE_ASSIGNMENT|[7]|products|[{"LastModifiedDate":"2018-01-02T23:41:55.000Z","IsDeleted":false,"CreatedById":"0051I000000zlxUQAQ","ProductCode":"GC1060-3","IsActive":true,"CreatedDate":"2017-10-25T22:52:04.000Z","Id":"01t1I0000016vrfQAA","LastModifiedById":"0051I000000zlxUQAQ","Name":"GenWatt Diesel 1000k (24 more) ...","SystemModstamp":"2018-01-02T23:41:55.000Z"}]|0x4f9120fe
+15:41:55.0 (3916202)|VARIABLE_SCOPE_BEGIN|[7]|oldProductMap|Map<Id,Product2>|true|false
+15:41:55.0 (4049583)|VARIABLE_ASSIGNMENT|[7]|oldProductMap|{"01t1I0000016vrfQAA":{"LastModifiedDate":"2018-01-02T23:27:58.000Z","IsDeleted":false,"CreatedById":"0051I000000zlxUQAQ","ProductCode":"GC1060-3","IsActive":false,"CreatedDate":"2017-10-25T22:52:04.000Z","Id":"01t1I0000016vrfQAA","LastModifiedById":"0051I000000zlxUQAQ","Name":"GenWatt Diesel 1000k (24 more) ...","SystemModstamp":"2018-01-02T23:27:58.000Z"}}|0x417f6036
+15:41:55.0 (4070125)|HEAP_ALLOCATE|[10]|Bytes:5
+15:41:55.0 (4074809)|STATEMENT_EXECUTE|[7]
+15:41:55.0 (4075844)|STATEMENT_EXECUTE|[10]
+15:41:55.0 (4090053)|HEAP_ALLOCATE|[10]|Bytes:4
+15:41:55.0 (4104686)|SYSTEM_CONSTRUCTOR_ENTRY|[10]|<init>()
+15:41:55.0 (4128738)|SYSTEM_CONSTRUCTOR_EXIT|[10]|<init>()
+15:41:55.0 (4133393)|HEAP_ALLOCATE|[10]|Bytes:4
+15:41:55.0 (4143849)|HEAP_ALLOCATE|[10]|Bytes:11
+15:41:55.0 (4147928)|HEAP_ALLOCATE|[10]|Bytes:9
+15:41:55.0 (4151723)|VARIABLE_SCOPE_BEGIN|[10]|trackChanges|List<String>|true|false
+15:41:55.0 (4176765)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:16
+15:41:55.0 (4188004)|VARIABLE_ASSIGNMENT|[10]|trackChanges|["Name","ProductCode","fakeField"]|0x53c453f9
+15:41:55.0 (4193156)|STATEMENT_EXECUTE|[11]
+15:41:55.0 (5302531)|HEAP_ALLOCATE|[11]|Bytes:4
+15:41:55.0 (5318074)|METHOD_ENTRY|[1]|01p1I00000FWXzb|Utils.Utils()
+15:41:55.0 (5323186)|STATEMENT_EXECUTE|[1]
+15:41:55.0 (5326396)|STATEMENT_EXECUTE|[1]
+15:41:55.0 (5332881)|SYSTEM_MODE_ENTER|true
+15:41:55.0 (5338764)|HEAP_ALLOCATE|[11]|Bytes:5
+15:41:55.0 (5343916)|SYSTEM_MODE_EXIT|true
+15:41:55.0 (5350153)|METHOD_EXIT|[1]|Utils
+15:41:55.0 (5375338)|METHOD_ENTRY|[11]|01p1I00000FWXzb|Utils.checkForChangedFields(List<SObject>, Map<Id,SObject>, List<String>)
+15:41:55.0 (5394273)|VARIABLE_SCOPE_BEGIN|[18]|newRecords|List<SObject>|true|false
+15:41:55.0 (5562504)|VARIABLE_ASSIGNMENT|[18]|newRecords|[{"LastModifiedDate":"2018-01-02T23:41:55.000Z","IsDeleted":false,"CreatedById":"0051I000000zlxUQAQ","ProductCode":"GC1060-3","IsActive":true,"CreatedDate":"2017-10-25T22:52:04.000Z","Id":"01t1I0000016vrfQAA","LastModifiedById":"0051I000000zlxUQAQ","Name":"GenWatt Diesel 1000k (24 more) ...","SystemModstamp":"2018-01-02T23:41:55.000Z"}]|0x4f9120fe
+15:41:55.0 (5574403)|VARIABLE_SCOPE_BEGIN|[18]|oldRecordMap|Map<Id,SObject>|true|false
+15:41:55.0 (5714505)|VARIABLE_ASSIGNMENT|[18]|oldRecordMap|{"01t1I0000016vrfQAA":{"LastModifiedDate":"2018-01-02T23:27:58.000Z","IsDeleted":false,"CreatedById":"0051I000000zlxUQAQ","ProductCode":"GC1060-3","IsActive":false,"CreatedDate":"2017-10-25T22:52:04.000Z","Id":"01t1I0000016vrfQAA","LastModifiedById":"0051I000000zlxUQAQ","Name":"GenWatt Diesel 1000k (24 more) ...","SystemModstamp":"2018-01-02T23:27:58.000Z"}}|0x417f6036
+15:41:55.0 (5724869)|VARIABLE_SCOPE_BEGIN|[18]|fields|List<String>|true|false
+15:41:55.0 (5734932)|VARIABLE_ASSIGNMENT|[18]|fields|["Name","ProductCode","fakeField"]|0x53c453f9
+15:41:55.0 (5745066)|SYSTEM_MODE_ENTER|true
+15:41:55.0 (5750855)|HEAP_ALLOCATE|[20]|Bytes:5
+15:41:55.0 (5755215)|STATEMENT_EXECUTE|[18]
+15:41:55.0 (5756334)|STATEMENT_EXECUTE|[20]
+15:41:55.0 (5764700)|HEAP_ALLOCATE|[20]|Bytes:4
+15:41:55.0 (5773986)|SYSTEM_CONSTRUCTOR_ENTRY|[20]|<init>()
+15:41:55.0 (5798586)|SYSTEM_CONSTRUCTOR_EXIT|[20]|<init>()
+15:41:55.0 (5803286)|VARIABLE_SCOPE_BEGIN|[20]|changedRecords|List<SObject>|true|false
+15:41:55.0 (5811279)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:41:55.0 (5817427)|VARIABLE_ASSIGNMENT|[20]|changedRecords|[]|0x269741db
+15:41:55.0 (5853294)|SYSTEM_METHOD_ENTRY|[21]|List<Product2>.iterator()
+15:41:55.0 (5972729)|SYSTEM_METHOD_EXIT|[21]|List<Product2>.iterator()
+15:41:55.0 (5992667)|SYSTEM_METHOD_ENTRY|[21]|system.ListIterator.hasNext()
+15:41:55.0 (6003931)|HEAP_ALLOCATE|[21]|Bytes:5
+15:41:55.0 (6011703)|SYSTEM_METHOD_EXIT|[21]|system.ListIterator.hasNext()
+15:41:55.0 (6046432)|VARIABLE_SCOPE_BEGIN|[21]|newRecord|SObject|true|false
+15:41:55.0 (6209964)|VARIABLE_ASSIGNMENT|[21]|newRecord|{"LastModifiedDate":"2018-01-02T23:41:55.000Z","IsDeleted":false,"CreatedById":"0051I000000zlxUQAQ","ProductCode":"GC1060-3","IsActive":true,"CreatedDate":"2017-10-25T22:52:04.000Z","Id":"01t1I0000016vrfQAA","LastModifiedById":"0051I000000zlxUQAQ","Name":"GenWatt Diesel 1000k (24 more) ...","SystemModstamp":"2018-01-02T23:41:55.000Z"}|0x2dd9a80b
+15:41:55.0 (6220486)|STATEMENT_EXECUTE|[21]
+15:41:55.0 (6221913)|STATEMENT_EXECUTE|[22]
+15:41:55.0 (6224993)|HEAP_ALLOCATE|[22]|Bytes:2
+15:41:55.0 (6262577)|SYSTEM_METHOD_ENTRY|[22]|SObject.get(String)
+15:41:55.0 (6305743)|HEAP_ALLOCATE|[22]|Bytes:4
+15:41:55.0 (6317878)|SYSTEM_METHOD_EXIT|[22]|SObject.get(String)
+15:41:55.0 (6328745)|HEAP_ALLOCATE|[22]|Bytes:4
+15:41:55.0 (6360258)|SYSTEM_METHOD_ENTRY|[22]|Map<Id,Product2>.get(Object)
+15:41:55.0 (6376504)|SYSTEM_METHOD_EXIT|[22]|Map<Id,Product2>.get(Object)
+15:41:55.0 (6386568)|VARIABLE_SCOPE_BEGIN|[22]|oldRecord|SObject|true|false
+15:41:55.0 (6552899)|VARIABLE_ASSIGNMENT|[22]|oldRecord|{"LastModifiedDate":"2018-01-02T23:27:58.000Z","IsDeleted":false,"CreatedById":"0051I000000zlxUQAQ","ProductCode":"GC1060-3","IsActive":false,"CreatedDate":"2017-10-25T22:52:04.000Z","Id":"01t1I0000016vrfQAA","LastModifiedById":"0051I000000zlxUQAQ","Name":"GenWatt Diesel 1000k (24 more) ...","SystemModstamp":"2018-01-02T23:27:58.000Z"}|0x534720f0
+15:41:55.0 (6569880)|SYSTEM_METHOD_ENTRY|[24]|List<String>.iterator()
+15:41:55.0 (6587523)|SYSTEM_METHOD_EXIT|[24]|List<String>.iterator()
+15:41:55.0 (6597179)|SYSTEM_METHOD_ENTRY|[24]|system.ListIterator.hasNext()
+15:41:55.0 (6604790)|HEAP_ALLOCATE|[24]|Bytes:5
+15:41:55.0 (6609985)|SYSTEM_METHOD_EXIT|[24]|system.ListIterator.hasNext()
+15:41:55.0 (6616239)|HEAP_ALLOCATE|[24]|Bytes:4
+15:41:55.0 (6622065)|VARIABLE_SCOPE_BEGIN|[24]|field|String|false|false
+15:41:55.0 (6630473)|VARIABLE_ASSIGNMENT|[24]|field|"Name"
+15:41:55.0 (6634524)|STATEMENT_EXECUTE|[24]
+15:41:55.0 (6648275)|SYSTEM_METHOD_ENTRY|[25]|SObject.get(String)
+15:41:55.0 (6676055)|HEAP_ALLOCATE|[25]|Bytes:44
+15:41:55.0 (6687095)|SYSTEM_METHOD_EXIT|[25]|SObject.get(String)
+15:41:55.0 (6697752)|SYSTEM_METHOD_ENTRY|[25]|SObject.get(String)
+15:41:55.0 (6708349)|HEAP_ALLOCATE|[25]|Bytes:44
+15:41:55.0 (6717176)|SYSTEM_METHOD_EXIT|[25]|SObject.get(String)
+15:41:55.0 (6769922)|SYSTEM_METHOD_ENTRY|[25]|com.salesforce.api.fast.System.compareObjects(Object, Object)
+15:41:55.0 (6801559)|SYSTEM_METHOD_EXIT|[25]|com.salesforce.api.fast.System.compareObjects(Object, Object)
+15:41:55.0 (6808644)|STATEMENT_EXECUTE|[25]
+15:41:55.0 (6813147)|SYSTEM_METHOD_ENTRY|[24]|system.ListIterator.hasNext()
+15:41:55.0 (6819179)|HEAP_ALLOCATE|[24]|Bytes:5
+15:41:55.0 (6824175)|SYSTEM_METHOD_EXIT|[24]|system.ListIterator.hasNext()
+15:41:55.0 (6828807)|HEAP_ALLOCATE|[24]|Bytes:11
+15:41:55.0 (6833889)|VARIABLE_SCOPE_BEGIN|[24]|field|String|false|false
+15:41:55.0 (6843195)|VARIABLE_ASSIGNMENT|[24]|field|"ProductCode"
+15:41:55.0 (6847036)|STATEMENT_EXECUTE|[24]
+15:41:55.0 (6856016)|SYSTEM_METHOD_ENTRY|[25]|SObject.get(String)
+15:41:55.0 (6871041)|HEAP_ALLOCATE|[25]|Bytes:8
+15:41:55.0 (6880330)|SYSTEM_METHOD_EXIT|[25]|SObject.get(String)
+15:41:55.0 (6889093)|SYSTEM_METHOD_ENTRY|[25]|SObject.get(String)
+15:41:55.0 (6897695)|HEAP_ALLOCATE|[25]|Bytes:8
+15:41:55.0 (6905730)|SYSTEM_METHOD_EXIT|[25]|SObject.get(String)
+15:41:55.0 (6917093)|SYSTEM_METHOD_ENTRY|[25]|com.salesforce.api.fast.System.compareObjects(Object, Object)
+15:41:55.0 (6931502)|SYSTEM_METHOD_EXIT|[25]|com.salesforce.api.fast.System.compareObjects(Object, Object)
+15:41:55.0 (6935959)|STATEMENT_EXECUTE|[25]
+15:41:55.0 (6939704)|SYSTEM_METHOD_ENTRY|[24]|system.ListIterator.hasNext()
+15:41:55.0 (6944322)|HEAP_ALLOCATE|[24]|Bytes:5
+15:41:55.0 (6948295)|SYSTEM_METHOD_EXIT|[24]|system.ListIterator.hasNext()
+15:41:55.0 (6952515)|HEAP_ALLOCATE|[24]|Bytes:9
+15:41:55.0 (6956906)|VARIABLE_SCOPE_BEGIN|[24]|field|String|false|false
+15:41:55.0 (6965431)|VARIABLE_ASSIGNMENT|[24]|field|"fakeField"
+15:41:55.0 (6969100)|STATEMENT_EXECUTE|[24]
+15:41:55.0 (6977109)|SYSTEM_METHOD_ENTRY|[25]|SObject.get(String)
+15:41:55.0 (7105552)|HEAP_ALLOCATE|[25]|Bytes:40
+15:41:55.0 (7117801)|SYSTEM_METHOD_EXIT|[25]|SObject.get(String)
+15:41:55.0 (7130932)|SYSTEM_MODE_EXIT|true
+15:41:55.0 (7140538)|METHOD_EXIT|[11]|01p1I00000FWXzb|Utils.checkForChangedFields(List<SObject>, Map<Id,SObject>, List<String>)
+15:41:55.0 (7148192)|METHOD_EXIT|[4]|01p1I00000FWXW5|ProductTriggerHelper.checkIfNameChanged(List<Product2>, Map<Id,Product2>)
+15:41:55.0 (7152640)|SYSTEM_MODE_EXIT|false
+15:41:55.0 (7156845)|METHOD_EXIT|[4]|01p1I00000FWXW5|ProductTriggerHelper.handleAfterUpdate(List<Product2>, Map<Id,Product2>)
+15:41:55.0 (7224768)|FATAL_ERROR|System.SObjectException: Invalid field fakeField for Product2
+
+Class.Utils.checkForChangedFields: line 25, column 1
+Class.ProductTriggerHelper.checkIfNameChanged: line 11, column 1
+Class.ProductTriggerHelper.handleAfterUpdate: line 4, column 1
+Trigger.ProductTrigger: line 4, column 1
+15:41:55.0 (7237298)|FATAL_ERROR|System.SObjectException: Invalid field fakeField for Product2
+
+Class.Utils.checkForChangedFields: line 25, column 1
+Class.ProductTriggerHelper.checkIfNameChanged: line 11, column 1
+Class.ProductTriggerHelper.handleAfterUpdate: line 4, column 1
+Trigger.ProductTrigger: line 4, column 1
+15:41:55.7 (7278552)|CUMULATIVE_LIMIT_USAGE
+15:41:55.7 (7278552)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:41:55.7 (7278552)|TOTAL_EMAIL_RECIPIENTS_QUEUED|0
+15:41:55.7 (7278552)|STATIC_VARIABLE_LIST|
+  char[]:DigitTens:0
+  long:serialVersionUID:0
+  long:serialVersionUID:0
+  double:MAX_VALUE:0
+  Boolean:FALSE:0
+  long:serialVersionUID:0
+  String:_sfdcSuppressedCodeLocations:0
+  double:MIN_VALUE:0
+  int:SIZE:0
+  double:NEGATIVE_INFINITY:0
+  int:MAX_VALUE:0
+  String:_sfdcAdditionalCodeLocations:0
+  char[]:digits:0
+  double:NaN:0
+  Boolean:TRUE:0
+  int:MIN_VALUE:0
+  char[]:DigitOnes:0
+  String:_sfdcAdditionalCodeLocations:0
+  int:BYTES:0
+  int:MIN_EXPONENT:0
+  int[]:sizeTable:0
+  int:MAX_EXPONENT:0
+  int:SIZE:0
+  double:POSITIVE_INFINITY:0
+  double:MIN_NORMAL:0
+  int:BYTES:0
+
+15:41:55.7 (7278552)|CUMULATIVE_LIMIT_USAGE_END
+
+15:41:55.0 (8303687)|CODE_UNIT_FINISHED|ProductTrigger on Product2 trigger event AfterUpdate for [01t1I0000016vrf]
+15:41:55.0 (9012594)|EXECUTION_FINISHED
+15:41:55.23 (23321679)|CUMULATIVE_PROFILING_BEGIN
+15:41:55.23 (23321679)|CUMULATIVE_PROFILING|No profiling information for SOQL operations
+15:41:55.23 (23321679)|CUMULATIVE_PROFILING|No profiling information for SOSL operations
+15:41:55.23 (23321679)|CUMULATIVE_PROFILING|No profiling information for DML operations
+15:41:55.23 (23321679)|CUMULATIVE_PROFILING|method invocations|
+External entry point: public void invoke(): executed 1 time in 7 ms
+Trigger.ProductTrigger: line 4, column 1: public static void handleAfterUpdate(List<Product2>, Map<Id,Product2>): executed 1 time in 4 ms
+Class.ProductTriggerHelper.handleAfterUpdate: line 4, column 1: private static void checkIfNameChanged(List<Product2>, Map<Id,Product2>): executed 1 time in 3 ms
+Class.ProductTriggerHelper.checkIfNameChanged: line 11, column 1: public static List<SObject> checkForChangedFields(List<SObject>, Map<Id,SObject>, List<String>): executed 1 time in 1 ms
+Class.Utils.checkForChangedFields: line 20, column 1: global public List<SObject>(): executed 1 time in 0 ms
+Class.Utils.checkForChangedFields: line 21, column 1: global public System.Iterator iterator(): executed 2 times in 0 ms
+Class.Utils.checkForChangedFields: line 22, column 1: public Object get(String): executed 2 times in 0 ms
+Class.Utils.checkForChangedFields: line 24, column 1: global public System.Iterator iterator(): executed 4 times in 0 ms
+Class.Utils.checkForChangedFields: line 25, column 1: public Object get(String): executed 7 times in 0 ms
+Class.ProductTriggerHelper.checkIfNameChanged: line 10, column 1: global public List<String>(): executed 1 time in 0 ms
+
+15:41:55.23 (23321679)|CUMULATIVE_PROFILING_END

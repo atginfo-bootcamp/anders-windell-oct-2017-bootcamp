@@ -1,0 +1,381 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,FINEST;CALLOUT,FINEST;DB,FINEST;SYSTEM,FINE;VALIDATION,INFO;VISUALFORCE,NONE;WAVE,INFO;WORKFLOW,FINER
+15:24:32.0 (436855)|USER_INFO|[EXTERNAL]|0051I000000zlxU|anders.windell@atginfo.com.apex.bootcamp|Pacific Standard Time|GMT-08:00
+15:24:32.0 (496903)|EXECUTION_STARTED
+15:24:32.0 (502215)|CODE_UNIT_STARTED|[EXTERNAL]|01q1I000001Dynp|ProductTrigger on Product2 trigger event AfterUpdate for [01t1I0000016vrf]
+15:24:32.0 (556893)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+15:24:32.0 (600370)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+15:24:32.0 (1051494)|HEAP_ALLOCATE|[72]|Bytes:3
+15:24:32.0 (1100678)|HEAP_ALLOCATE|[77]|Bytes:152
+15:24:32.0 (1125643)|HEAP_ALLOCATE|[342]|Bytes:408
+15:24:32.0 (1148112)|HEAP_ALLOCATE|[355]|Bytes:408
+15:24:32.0 (1166177)|HEAP_ALLOCATE|[467]|Bytes:48
+15:24:32.0 (1201057)|HEAP_ALLOCATE|[139]|Bytes:6
+15:24:32.0 (1226888)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:24:32.0 (1249719)|VARIABLE_SCOPE_BEGIN|[1]|this|ProductTrigger|true|false
+15:24:32.0 (1361681)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x1a63003a
+15:24:32.0 (1428549)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:24:32.0 (1507651)|VARIABLE_SCOPE_BEGIN|[1]|this|ProductTrigger|true|false
+15:24:32.0 (1536252)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x1a63003a
+15:24:32.0 (1549660)|STATEMENT_EXECUTE|[1]
+15:24:32.0 (1589275)|HEAP_ALLOCATE|[50]|Bytes:5
+15:24:32.0 (1620547)|HEAP_ALLOCATE|[56]|Bytes:5
+15:24:32.0 (1632785)|HEAP_ALLOCATE|[64]|Bytes:7
+15:24:32.0 (1669884)|STATEMENT_EXECUTE|[3]
+15:24:32.0 (1673128)|STATEMENT_EXECUTE|[4]
+15:24:32.0 (5849819)|HEAP_ALLOCATE|[4]|Bytes:9
+15:24:32.0 (5867074)|HEAP_ALLOCATE|[4]|Bytes:8
+15:24:32.0 (5884071)|METHOD_ENTRY|[1]|01p1I00000FWXW5|ProductTriggerHelper.ProductTriggerHelper()
+15:24:32.0 (5890707)|STATEMENT_EXECUTE|[1]
+15:24:32.0 (5895614)|STATEMENT_EXECUTE|[1]
+15:24:32.0 (6287625)|SYSTEM_MODE_ENTER|false
+15:24:32.0 (6304895)|HEAP_ALLOCATE|[4]|Bytes:5
+15:24:32.0 (6314404)|SYSTEM_MODE_EXIT|false
+15:24:32.0 (6327599)|METHOD_EXIT|[1]|ProductTriggerHelper
+15:24:32.0 (6372442)|METHOD_ENTRY|[4]|01p1I00000FWXW5|ProductTriggerHelper.handleAfterUpdate(List<Product2>, Map<Id,Product2>)
+15:24:32.0 (6412063)|VARIABLE_SCOPE_BEGIN|[3]|products|List<Product2>|true|false
+15:24:32.0 (7074739)|VARIABLE_ASSIGNMENT|[3]|products|[{"LastModifiedDate":"2018-01-02T23:24:32.000Z","IsDeleted":false,"CreatedById":"0051I000000zlxUQAQ","ProductCode":"GC1060-2","IsActive":true,"CreatedDate":"2017-10-25T22:52:04.000Z","Id":"01t1I0000016vrfQAA","LastModifiedById":"0051I000000zlxUQAQ","Name":"GenWatt Diesel 1000k (21 more) ...","SystemModstamp":"2018-01-02T23:24:32.000Z"}]|0xd0ad5a0
+15:24:32.0 (7095197)|VARIABLE_SCOPE_BEGIN|[3]|oldProductMap|Map<Id,Product2>|true|false
+15:24:32.0 (7304889)|VARIABLE_ASSIGNMENT|[3]|oldProductMap|{"01t1I0000016vrfQAA":{"LastModifiedDate":"2018-01-02T23:21:53.000Z","IsDeleted":false,"CreatedById":"0051I000000zlxUQAQ","ProductCode":"GC1060-1","IsActive":false,"CreatedDate":"2017-10-25T22:52:04.000Z","Id":"01t1I0000016vrfQAA","LastModifiedById":"0051I000000zlxUQAQ","Name":"GenWatt Diesel 1000k (23 more) ...","SystemModstamp":"2018-01-02T23:21:53.000Z"}}|0xd11d0f5
+15:24:32.0 (7330917)|SYSTEM_MODE_ENTER|false
+15:24:32.0 (7339446)|HEAP_ALLOCATE|[4]|Bytes:5
+15:24:32.0 (7346054)|STATEMENT_EXECUTE|[3]
+15:24:32.0 (7347384)|STATEMENT_EXECUTE|[4]
+15:24:32.0 (7369564)|METHOD_ENTRY|[4]|01p1I00000FWXW5|ProductTriggerHelper.checkIfNameChanged(List<Product2>, Map<Id,Product2>)
+15:24:32.0 (7417004)|VARIABLE_SCOPE_BEGIN|[7]|products|List<Product2>|true|false
+15:24:32.0 (7587431)|VARIABLE_ASSIGNMENT|[7]|products|[{"LastModifiedDate":"2018-01-02T23:24:32.000Z","IsDeleted":false,"CreatedById":"0051I000000zlxUQAQ","ProductCode":"GC1060-2","IsActive":true,"CreatedDate":"2017-10-25T22:52:04.000Z","Id":"01t1I0000016vrfQAA","LastModifiedById":"0051I000000zlxUQAQ","Name":"GenWatt Diesel 1000k (21 more) ...","SystemModstamp":"2018-01-02T23:24:32.000Z"}]|0xd0ad5a0
+15:24:32.0 (7600748)|VARIABLE_SCOPE_BEGIN|[7]|oldProductMap|Map<Id,Product2>|true|false
+15:24:32.0 (7763151)|VARIABLE_ASSIGNMENT|[7]|oldProductMap|{"01t1I0000016vrfQAA":{"LastModifiedDate":"2018-01-02T23:21:53.000Z","IsDeleted":false,"CreatedById":"0051I000000zlxUQAQ","ProductCode":"GC1060-1","IsActive":false,"CreatedDate":"2017-10-25T22:52:04.000Z","Id":"01t1I0000016vrfQAA","LastModifiedById":"0051I000000zlxUQAQ","Name":"GenWatt Diesel 1000k (23 more) ...","SystemModstamp":"2018-01-02T23:21:53.000Z"}}|0xd11d0f5
+15:24:32.0 (7780361)|HEAP_ALLOCATE|[10]|Bytes:5
+15:24:32.0 (7785868)|STATEMENT_EXECUTE|[7]
+15:24:32.0 (7787134)|STATEMENT_EXECUTE|[10]
+15:24:32.0 (7806241)|HEAP_ALLOCATE|[10]|Bytes:4
+15:24:32.0 (7822739)|SYSTEM_CONSTRUCTOR_ENTRY|[10]|<init>()
+15:24:32.0 (7847803)|SYSTEM_CONSTRUCTOR_EXIT|[10]|<init>()
+15:24:32.0 (7853602)|HEAP_ALLOCATE|[10]|Bytes:4
+15:24:32.0 (7863735)|HEAP_ALLOCATE|[10]|Bytes:11
+15:24:32.0 (7872300)|HEAP_ALLOCATE|[10]|Bytes:8
+15:24:32.0 (7879263)|VARIABLE_SCOPE_BEGIN|[10]|trackChanges|List<String>|true|false
+15:24:32.0 (7915786)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:16
+15:24:32.0 (7928315)|VARIABLE_ASSIGNMENT|[10]|trackChanges|["Name","ProductCode","isActive"]|0x3fde7520
+15:24:32.0 (7934803)|STATEMENT_EXECUTE|[11]
+15:24:32.0 (7953430)|METHOD_ENTRY|[11]|01p1I00000FWXW5|ProductTriggerHelper.checkForChangedFields(List<SObject>, Map<Id,SObject>, List<String>)
+15:24:32.0 (7972348)|VARIABLE_SCOPE_BEGIN|[46]|newRecords|List<SObject>|true|false
+15:24:32.0 (8150476)|VARIABLE_ASSIGNMENT|[46]|newRecords|[{"LastModifiedDate":"2018-01-02T23:24:32.000Z","IsDeleted":false,"CreatedById":"0051I000000zlxUQAQ","ProductCode":"GC1060-2","IsActive":true,"CreatedDate":"2017-10-25T22:52:04.000Z","Id":"01t1I0000016vrfQAA","LastModifiedById":"0051I000000zlxUQAQ","Name":"GenWatt Diesel 1000k (21 more) ...","SystemModstamp":"2018-01-02T23:24:32.000Z"}]|0xd0ad5a0
+15:24:32.0 (8164772)|VARIABLE_SCOPE_BEGIN|[46]|oldRecordMap|Map<Id,SObject>|true|false
+15:24:32.0 (8334148)|VARIABLE_ASSIGNMENT|[46]|oldRecordMap|{"01t1I0000016vrfQAA":{"LastModifiedDate":"2018-01-02T23:21:53.000Z","IsDeleted":false,"CreatedById":"0051I000000zlxUQAQ","ProductCode":"GC1060-1","IsActive":false,"CreatedDate":"2017-10-25T22:52:04.000Z","Id":"01t1I0000016vrfQAA","LastModifiedById":"0051I000000zlxUQAQ","Name":"GenWatt Diesel 1000k (23 more) ...","SystemModstamp":"2018-01-02T23:21:53.000Z"}}|0xd11d0f5
+15:24:32.0 (8345515)|VARIABLE_SCOPE_BEGIN|[46]|fields|List<String>|true|false
+15:24:32.0 (8357943)|VARIABLE_ASSIGNMENT|[46]|fields|["Name","ProductCode","isActive"]|0x3fde7520
+15:24:32.0 (8376831)|HEAP_ALLOCATE|[48]|Bytes:5
+15:24:32.0 (8382363)|STATEMENT_EXECUTE|[46]
+15:24:32.0 (8383574)|STATEMENT_EXECUTE|[48]
+15:24:32.0 (8392309)|HEAP_ALLOCATE|[48]|Bytes:4
+15:24:32.0 (8402461)|SYSTEM_CONSTRUCTOR_ENTRY|[48]|<init>()
+15:24:32.0 (8421001)|SYSTEM_CONSTRUCTOR_EXIT|[48]|<init>()
+15:24:32.0 (8425710)|VARIABLE_SCOPE_BEGIN|[48]|changedRecords|List<SObject>|true|false
+15:24:32.0 (8434320)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:24:32.0 (8440523)|VARIABLE_ASSIGNMENT|[48]|changedRecords|[]|0x67b7e2a7
+15:24:32.0 (8455302)|SYSTEM_METHOD_ENTRY|[49]|List<String>.iterator()
+15:24:32.0 (8509181)|SYSTEM_METHOD_EXIT|[49]|List<String>.iterator()
+15:24:32.0 (8523937)|SYSTEM_METHOD_ENTRY|[49]|system.ListIterator.hasNext()
+15:24:32.0 (8533847)|HEAP_ALLOCATE|[49]|Bytes:5
+15:24:32.0 (8541110)|SYSTEM_METHOD_EXIT|[49]|system.ListIterator.hasNext()
+15:24:32.0 (8551331)|HEAP_ALLOCATE|[49]|Bytes:4
+15:24:32.0 (8560578)|VARIABLE_SCOPE_BEGIN|[49]|field|String|false|false
+15:24:32.0 (8570094)|VARIABLE_ASSIGNMENT|[49]|field|"Name"
+15:24:32.0 (8578263)|STATEMENT_EXECUTE|[49]
+15:24:32.0 (8612023)|SYSTEM_METHOD_ENTRY|[50]|List<Product2>.iterator()
+15:24:32.0 (8720621)|SYSTEM_METHOD_EXIT|[50]|List<Product2>.iterator()
+15:24:32.0 (8740664)|SYSTEM_METHOD_ENTRY|[50]|system.ListIterator.hasNext()
+15:24:32.0 (8749617)|HEAP_ALLOCATE|[50]|Bytes:5
+15:24:32.0 (8755811)|SYSTEM_METHOD_EXIT|[50]|system.ListIterator.hasNext()
+15:24:32.0 (8789972)|VARIABLE_SCOPE_BEGIN|[50]|newRecord|SObject|true|false
+15:24:32.0 (8983770)|VARIABLE_ASSIGNMENT|[50]|newRecord|{"LastModifiedDate":"2018-01-02T23:24:32.000Z","IsDeleted":false,"CreatedById":"0051I000000zlxUQAQ","ProductCode":"GC1060-2","IsActive":true,"CreatedDate":"2017-10-25T22:52:04.000Z","Id":"01t1I0000016vrfQAA","LastModifiedById":"0051I000000zlxUQAQ","Name":"GenWatt Diesel 1000k (21 more) ...","SystemModstamp":"2018-01-02T23:24:32.000Z"}|0x1517c853
+15:24:32.0 (8999483)|STATEMENT_EXECUTE|[50]
+15:24:32.0 (9000904)|STATEMENT_EXECUTE|[51]
+15:24:32.0 (9005005)|HEAP_ALLOCATE|[51]|Bytes:2
+15:24:32.0 (9048511)|SYSTEM_METHOD_ENTRY|[51]|SObject.get(String)
+15:24:32.0 (9107436)|HEAP_ALLOCATE|[51]|Bytes:4
+15:24:32.0 (9121251)|SYSTEM_METHOD_EXIT|[51]|SObject.get(String)
+15:24:32.0 (9133908)|HEAP_ALLOCATE|[51]|Bytes:4
+15:24:32.0 (9166920)|SYSTEM_METHOD_ENTRY|[51]|Map<Id,Product2>.get(Object)
+15:24:32.0 (9185494)|SYSTEM_METHOD_EXIT|[51]|Map<Id,Product2>.get(Object)
+15:24:32.0 (9196588)|VARIABLE_SCOPE_BEGIN|[51]|oldRecord|SObject|true|false
+15:24:32.0 (9369474)|VARIABLE_ASSIGNMENT|[51]|oldRecord|{"LastModifiedDate":"2018-01-02T23:21:53.000Z","IsDeleted":false,"CreatedById":"0051I000000zlxUQAQ","ProductCode":"GC1060-1","IsActive":false,"CreatedDate":"2017-10-25T22:52:04.000Z","Id":"01t1I0000016vrfQAA","LastModifiedById":"0051I000000zlxUQAQ","Name":"GenWatt Diesel 1000k (23 more) ...","SystemModstamp":"2018-01-02T23:21:53.000Z"}|0x597d6b10
+15:24:32.0 (9391807)|SYSTEM_METHOD_ENTRY|[53]|SObject.get(String)
+15:24:32.0 (9423476)|HEAP_ALLOCATE|[53]|Bytes:41
+15:24:32.0 (9435998)|SYSTEM_METHOD_EXIT|[53]|SObject.get(String)
+15:24:32.0 (9448865)|SYSTEM_METHOD_ENTRY|[53]|SObject.get(String)
+15:24:32.0 (9461128)|HEAP_ALLOCATE|[53]|Bytes:43
+15:24:32.0 (9469494)|SYSTEM_METHOD_EXIT|[53]|SObject.get(String)
+15:24:32.0 (9520622)|SYSTEM_METHOD_ENTRY|[53]|com.salesforce.api.fast.System.compareObjects(Object, Object)
+15:24:32.0 (9558771)|SYSTEM_METHOD_EXIT|[53]|com.salesforce.api.fast.System.compareObjects(Object, Object)
+15:24:32.0 (9566094)|STATEMENT_EXECUTE|[53]
+15:24:32.0 (9567521)|STATEMENT_EXECUTE|[54]
+15:24:32.0 (9579441)|SYSTEM_METHOD_ENTRY|[54]|List<SObject>.add(Object)
+15:24:32.0 (9599404)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:24:32.0 (9609279)|SYSTEM_METHOD_EXIT|[54]|List<SObject>.add(Object)
+15:24:32.0 (9616887)|STATEMENT_EXECUTE|[55]
+15:24:32.0 (9623166)|VARIABLE_ASSIGNMENT|[50]|newRecord|null|
+15:24:32.0 (9637522)|SYSTEM_METHOD_ENTRY|[49]|system.ListIterator.hasNext()
+15:24:32.0 (9646732)|HEAP_ALLOCATE|[49]|Bytes:5
+15:24:32.0 (9652974)|SYSTEM_METHOD_EXIT|[49]|system.ListIterator.hasNext()
+15:24:32.0 (9659494)|HEAP_ALLOCATE|[49]|Bytes:11
+15:24:32.0 (9666080)|VARIABLE_SCOPE_BEGIN|[49]|field|String|false|false
+15:24:32.0 (9678089)|VARIABLE_ASSIGNMENT|[49]|field|"ProductCode"
+15:24:32.0 (9682402)|STATEMENT_EXECUTE|[49]
+15:24:32.0 (9690581)|SYSTEM_METHOD_ENTRY|[50]|List<Product2>.iterator()
+15:24:32.0 (9696117)|SYSTEM_METHOD_EXIT|[50]|List<Product2>.iterator()
+15:24:32.0 (9701496)|SYSTEM_METHOD_ENTRY|[50]|system.ListIterator.hasNext()
+15:24:32.0 (9706613)|HEAP_ALLOCATE|[50]|Bytes:5
+15:24:32.0 (9712614)|SYSTEM_METHOD_EXIT|[50]|system.ListIterator.hasNext()
+15:24:32.0 (9730721)|VARIABLE_SCOPE_BEGIN|[50]|newRecord|SObject|true|false
+15:24:32.0 (9940066)|VARIABLE_ASSIGNMENT|[50]|newRecord|{"LastModifiedDate":"2018-01-02T23:24:32.000Z","IsDeleted":false,"CreatedById":"0051I000000zlxUQAQ","ProductCode":"GC1060-2","IsActive":true,"CreatedDate":"2017-10-25T22:52:04.000Z","Id":"01t1I0000016vrfQAA","LastModifiedById":"0051I000000zlxUQAQ","Name":"GenWatt Diesel 1000k (21 more) ...","SystemModstamp":"2018-01-02T23:24:32.000Z"}|0x1517c853
+15:24:32.0 (9951250)|STATEMENT_EXECUTE|[50]
+15:24:32.0 (9952610)|STATEMENT_EXECUTE|[51]
+15:24:32.0 (9968955)|SYSTEM_METHOD_ENTRY|[51]|SObject.get(String)
+15:24:32.0 (9987707)|HEAP_ALLOCATE|[51]|Bytes:4
+15:24:32.0 (9999942)|SYSTEM_METHOD_EXIT|[51]|SObject.get(String)
+15:24:32.0 (10005855)|HEAP_ALLOCATE|[51]|Bytes:4
+15:24:32.0 (10027955)|SYSTEM_METHOD_ENTRY|[51]|Map<Id,Product2>.get(Object)
+15:24:32.0 (10045590)|SYSTEM_METHOD_EXIT|[51]|Map<Id,Product2>.get(Object)
+15:24:32.0 (10060837)|VARIABLE_SCOPE_BEGIN|[51]|oldRecord|SObject|true|false
+15:24:32.0 (10265268)|VARIABLE_ASSIGNMENT|[51]|oldRecord|{"LastModifiedDate":"2018-01-02T23:21:53.000Z","IsDeleted":false,"CreatedById":"0051I000000zlxUQAQ","ProductCode":"GC1060-1","IsActive":false,"CreatedDate":"2017-10-25T22:52:04.000Z","Id":"01t1I0000016vrfQAA","LastModifiedById":"0051I000000zlxUQAQ","Name":"GenWatt Diesel 1000k (23 more) ...","SystemModstamp":"2018-01-02T23:21:53.000Z"}|0x597d6b10
+15:24:32.0 (10293964)|SYSTEM_METHOD_ENTRY|[53]|SObject.get(String)
+15:24:32.0 (10313981)|HEAP_ALLOCATE|[53]|Bytes:8
+15:24:32.0 (10327780)|SYSTEM_METHOD_EXIT|[53]|SObject.get(String)
+15:24:32.0 (10337431)|SYSTEM_METHOD_ENTRY|[53]|SObject.get(String)
+15:24:32.0 (10348841)|HEAP_ALLOCATE|[53]|Bytes:8
+15:24:32.0 (10357345)|SYSTEM_METHOD_EXIT|[53]|SObject.get(String)
+15:24:32.0 (10375466)|SYSTEM_METHOD_ENTRY|[53]|com.salesforce.api.fast.System.compareObjects(Object, Object)
+15:24:32.0 (10392779)|SYSTEM_METHOD_EXIT|[53]|com.salesforce.api.fast.System.compareObjects(Object, Object)
+15:24:32.0 (10397698)|STATEMENT_EXECUTE|[53]
+15:24:32.0 (10399372)|STATEMENT_EXECUTE|[54]
+15:24:32.0 (10407306)|SYSTEM_METHOD_ENTRY|[54]|List<SObject>.add(Object)
+15:24:32.0 (10417404)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:24:32.0 (10425954)|SYSTEM_METHOD_EXIT|[54]|List<SObject>.add(Object)
+15:24:32.0 (10430087)|STATEMENT_EXECUTE|[55]
+15:24:32.0 (10435609)|VARIABLE_ASSIGNMENT|[50]|newRecord|null|
+15:24:32.0 (10443985)|SYSTEM_METHOD_ENTRY|[49]|system.ListIterator.hasNext()
+15:24:32.0 (10454841)|HEAP_ALLOCATE|[49]|Bytes:5
+15:24:32.0 (10460694)|SYSTEM_METHOD_EXIT|[49]|system.ListIterator.hasNext()
+15:24:32.0 (10466394)|HEAP_ALLOCATE|[49]|Bytes:8
+15:24:32.0 (10472550)|VARIABLE_SCOPE_BEGIN|[49]|field|String|false|false
+15:24:32.0 (10482095)|VARIABLE_ASSIGNMENT|[49]|field|"isActive"
+15:24:32.0 (10487781)|STATEMENT_EXECUTE|[49]
+15:24:32.0 (10491757)|SYSTEM_METHOD_ENTRY|[50]|List<Product2>.iterator()
+15:24:32.0 (10497633)|SYSTEM_METHOD_EXIT|[50]|List<Product2>.iterator()
+15:24:32.0 (10502798)|SYSTEM_METHOD_ENTRY|[50]|system.ListIterator.hasNext()
+15:24:32.0 (10507892)|HEAP_ALLOCATE|[50]|Bytes:5
+15:24:32.0 (10512317)|SYSTEM_METHOD_EXIT|[50]|system.ListIterator.hasNext()
+15:24:32.0 (10532214)|VARIABLE_SCOPE_BEGIN|[50]|newRecord|SObject|true|false
+15:24:32.0 (10712375)|VARIABLE_ASSIGNMENT|[50]|newRecord|{"LastModifiedDate":"2018-01-02T23:24:32.000Z","IsDeleted":false,"CreatedById":"0051I000000zlxUQAQ","ProductCode":"GC1060-2","IsActive":true,"CreatedDate":"2017-10-25T22:52:04.000Z","Id":"01t1I0000016vrfQAA","LastModifiedById":"0051I000000zlxUQAQ","Name":"GenWatt Diesel 1000k (21 more) ...","SystemModstamp":"2018-01-02T23:24:32.000Z"}|0x1517c853
+15:24:32.0 (10723486)|STATEMENT_EXECUTE|[50]
+15:24:32.0 (10725338)|STATEMENT_EXECUTE|[51]
+15:24:32.0 (10739038)|SYSTEM_METHOD_ENTRY|[51]|SObject.get(String)
+15:24:32.0 (10756245)|HEAP_ALLOCATE|[51]|Bytes:4
+15:24:32.0 (10766801)|SYSTEM_METHOD_EXIT|[51]|SObject.get(String)
+15:24:32.0 (10775159)|HEAP_ALLOCATE|[51]|Bytes:4
+15:24:32.0 (10785447)|SYSTEM_METHOD_ENTRY|[51]|Map<Id,Product2>.get(Object)
+15:24:32.0 (10795982)|SYSTEM_METHOD_EXIT|[51]|Map<Id,Product2>.get(Object)
+15:24:32.0 (10805312)|VARIABLE_SCOPE_BEGIN|[51]|oldRecord|SObject|true|false
+15:24:32.0 (10977759)|VARIABLE_ASSIGNMENT|[51]|oldRecord|{"LastModifiedDate":"2018-01-02T23:21:53.000Z","IsDeleted":false,"CreatedById":"0051I000000zlxUQAQ","ProductCode":"GC1060-1","IsActive":false,"CreatedDate":"2017-10-25T22:52:04.000Z","Id":"01t1I0000016vrfQAA","LastModifiedById":"0051I000000zlxUQAQ","Name":"GenWatt Diesel 1000k (23 more) ...","SystemModstamp":"2018-01-02T23:21:53.000Z"}|0x597d6b10
+15:24:32.0 (10998344)|SYSTEM_METHOD_ENTRY|[53]|SObject.get(String)
+15:24:32.0 (11022074)|SYSTEM_METHOD_EXIT|[53]|SObject.get(String)
+15:24:32.0 (11033030)|SYSTEM_METHOD_ENTRY|[53]|SObject.get(String)
+15:24:32.0 (11048100)|SYSTEM_METHOD_EXIT|[53]|SObject.get(String)
+15:24:32.0 (11065003)|SYSTEM_METHOD_ENTRY|[53]|com.salesforce.api.fast.System.compareObjects(Object, Object)
+15:24:32.0 (11071810)|HEAP_ALLOCATE|[53]|Bytes:5
+15:24:32.0 (11076012)|HEAP_ALLOCATE|[53]|Bytes:5
+15:24:32.0 (11100457)|SYSTEM_METHOD_EXIT|[53]|com.salesforce.api.fast.System.compareObjects(Object, Object)
+15:24:32.0 (11105450)|STATEMENT_EXECUTE|[53]
+15:24:32.0 (11107094)|STATEMENT_EXECUTE|[54]
+15:24:32.0 (11113803)|SYSTEM_METHOD_ENTRY|[54]|List<SObject>.add(Object)
+15:24:32.0 (11122726)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:24:32.0 (11130659)|SYSTEM_METHOD_EXIT|[54]|List<SObject>.add(Object)
+15:24:32.0 (11138045)|STATEMENT_EXECUTE|[55]
+15:24:32.0 (11142989)|VARIABLE_ASSIGNMENT|[50]|newRecord|null|
+15:24:32.0 (11155349)|SYSTEM_METHOD_ENTRY|[49]|system.ListIterator.hasNext()
+15:24:32.0 (11161255)|HEAP_ALLOCATE|[49]|Bytes:5
+15:24:32.0 (11167540)|SYSTEM_METHOD_EXIT|[49]|system.ListIterator.hasNext()
+15:24:32.0 (11174388)|VARIABLE_ASSIGNMENT|[49]|field|null
+15:24:32.0 (11178217)|STATEMENT_EXECUTE|[61]
+15:24:32.0 (11187544)|METHOD_EXIT|[11]|01p1I00000FWXW5|ProductTriggerHelper.checkForChangedFields(List<SObject>, Map<Id,SObject>, List<String>)
+15:24:32.0 (11204848)|VARIABLE_SCOPE_BEGIN|[11]|changedProducts|List<Product2>|true|false
+15:24:32.0 (11660287)|VARIABLE_ASSIGNMENT|[11]|changedProducts|[{"LastModifiedDate":"2018-01-02T23:24:32.000Z","IsDeleted":false,"CreatedById":"0051I000000zlxUQAQ","ProductCode":"GC1060-2","IsActive":true,"CreatedDate":"2017-10-25T22:52:04.000Z","Id":"01t1I0000016vrfQAA","LastModifiedById":"0051I000000zlxUQAQ","Name":"GenWatt Diesel 1000k (21 more) ...","SystemModstamp":"2018-01-02T23:24:32.000Z"},{"LastModifiedDate":"2018-01-02T23:24:32.000Z","IsDeleted":false,"CreatedById":"0051I000000zlxUQAQ","ProductCode":"GC1060-2","IsActive":true,"CreatedDate":"2017-10-25T22:52:04.000Z","Id":"01t1I0000016vrfQAA","LastModifiedById":"0051I000000zlxUQAQ","Name":"GenWatt Diesel 1000k (21 more) ...","SystemModstamp":"2018-01-02T23:24:32.000Z"},{"LastModifiedDate":"2018-01-02T23:24:32.000Z","IsDeleted":false,"CreatedById":"0051I000000zlxUQAQ","ProductCode":"GC1060-2","IsActive":true,"CreatedDate":"2017-10-25T22:52:04.000Z","Id":"01t1I0000016vrfQAA","LastModifiedById":"0051I000000zlxUQAQ","Name":"GenWatt Diesel 1000k (21 more) ...","SystemModstamp":"2018-01-02T23:24:32.000Z"}]|0x67b7e2a7
+15:24:32.0 (11687898)|SYSTEM_METHOD_ENTRY|[12]|List<SObject>.iterator()
+15:24:32.0 (11715696)|SYSTEM_METHOD_EXIT|[12]|List<SObject>.iterator()
+15:24:32.0 (11726537)|SYSTEM_METHOD_ENTRY|[12]|system.ListIterator.hasNext()
+15:24:32.0 (11738699)|HEAP_ALLOCATE|[12]|Bytes:5
+15:24:32.0 (11745571)|SYSTEM_METHOD_EXIT|[12]|system.ListIterator.hasNext()
+15:24:32.0 (11758763)|VARIABLE_SCOPE_BEGIN|[12]|prod|Product2|true|false
+15:24:32.0 (11929266)|VARIABLE_ASSIGNMENT|[12]|prod|{"LastModifiedDate":"2018-01-02T23:24:32.000Z","IsDeleted":false,"CreatedById":"0051I000000zlxUQAQ","ProductCode":"GC1060-2","IsActive":true,"CreatedDate":"2017-10-25T22:52:04.000Z","Id":"01t1I0000016vrfQAA","LastModifiedById":"0051I000000zlxUQAQ","Name":"GenWatt Diesel 1000k (21 more) ...","SystemModstamp":"2018-01-02T23:24:32.000Z"}|0x1517c853
+15:24:32.0 (11941540)|STATEMENT_EXECUTE|[12]
+15:24:32.0 (11942923)|STATEMENT_EXECUTE|[13]
+15:24:32.0 (11946661)|HEAP_ALLOCATE|[13]|Bytes:26
+15:24:32.0 (11977012)|SYSTEM_METHOD_ENTRY|[13]|Map<Id,Product2>.get(Object)
+15:24:32.0 (12002479)|SYSTEM_METHOD_EXIT|[13]|Map<Id,Product2>.get(Object)
+15:24:32.0 (12020834)|HEAP_ALLOCATE|[13]|Bytes:4
+15:24:32.0 (12037937)|HEAP_ALLOCATE|[13]|Bytes:114
+15:24:32.0 (12265630)|SYSTEM_METHOD_ENTRY|[13]|System.debug(ANY)
+15:24:32.0 (12276841)|USER_DEBUG|[13]|DEBUG|Product Name Changed From GenWatt Diesel 1000kW - Deprecated Harderer to GenWatt Diesel 1000kW - Deprecated Harder
+15:24:32.0 (12285676)|SYSTEM_METHOD_EXIT|[13]|System.debug(ANY)
+15:24:32.0 (12291335)|STATEMENT_EXECUTE|[14]
+15:24:32.0 (12295257)|HEAP_ALLOCATE|[14]|Bytes:26
+15:24:32.0 (12319446)|SYSTEM_METHOD_ENTRY|[14]|Map<Id,Product2>.get(Object)
+15:24:32.0 (12350173)|SYSTEM_METHOD_EXIT|[14]|Map<Id,Product2>.get(Object)
+15:24:32.0 (12379732)|HEAP_ALLOCATE|[14]|Bytes:46
+15:24:32.0 (12392742)|SYSTEM_METHOD_ENTRY|[14]|System.debug(ANY)
+15:24:32.0 (12397447)|USER_DEBUG|[14]|DEBUG|Product Code Changed From GC1060-1 to GC1060-2
+15:24:32.0 (12404277)|SYSTEM_METHOD_EXIT|[14]|System.debug(ANY)
+15:24:32.0 (12407788)|STATEMENT_EXECUTE|[15]
+15:24:32.0 (12410399)|HEAP_ALLOCATE|[15]|Bytes:22
+15:24:32.0 (12426607)|SYSTEM_METHOD_ENTRY|[15]|Map<Id,Product2>.get(Object)
+15:24:32.0 (12443526)|SYSTEM_METHOD_EXIT|[15]|Map<Id,Product2>.get(Object)
+15:24:32.0 (12493611)|SYSTEM_METHOD_ENTRY|[15]|String.valueOf(Object)
+15:24:32.0 (12504839)|HEAP_ALLOCATE|[15]|Bytes:5
+15:24:32.0 (12515438)|SYSTEM_METHOD_EXIT|[15]|String.valueOf(Object)
+15:24:32.0 (12534659)|SYSTEM_METHOD_ENTRY|[15]|String.valueOf(Object)
+15:24:32.0 (12539718)|HEAP_ALLOCATE|[15]|Bytes:4
+15:24:32.0 (12548244)|SYSTEM_METHOD_EXIT|[15]|String.valueOf(Object)
+15:24:32.0 (12553507)|HEAP_ALLOCATE|[15]|Bytes:35
+15:24:32.0 (12561025)|SYSTEM_METHOD_ENTRY|[15]|System.debug(ANY)
+15:24:32.0 (12565037)|USER_DEBUG|[15]|DEBUG|isActive Changed From false to true
+15:24:32.0 (12570562)|SYSTEM_METHOD_EXIT|[15]|System.debug(ANY)
+15:24:32.0 (12580322)|SYSTEM_METHOD_ENTRY|[12]|system.ListIterator.hasNext()
+15:24:32.0 (12586711)|HEAP_ALLOCATE|[12]|Bytes:5
+15:24:32.0 (12592046)|SYSTEM_METHOD_EXIT|[12]|system.ListIterator.hasNext()
+15:24:32.0 (12603975)|VARIABLE_SCOPE_BEGIN|[12]|prod|Product2|true|false
+15:24:32.0 (12793214)|VARIABLE_ASSIGNMENT|[12]|prod|{"LastModifiedDate":"2018-01-02T23:24:32.000Z","IsDeleted":false,"CreatedById":"0051I000000zlxUQAQ","ProductCode":"GC1060-2","IsActive":true,"CreatedDate":"2017-10-25T22:52:04.000Z","Id":"01t1I0000016vrfQAA","LastModifiedById":"0051I000000zlxUQAQ","Name":"GenWatt Diesel 1000k (21 more) ...","SystemModstamp":"2018-01-02T23:24:32.000Z"}|0x1517c853
+15:24:32.0 (12804340)|STATEMENT_EXECUTE|[12]
+15:24:32.0 (12805624)|STATEMENT_EXECUTE|[13]
+15:24:32.0 (12838192)|SYSTEM_METHOD_ENTRY|[13]|Map<Id,Product2>.get(Object)
+15:24:32.0 (12856919)|SYSTEM_METHOD_EXIT|[13]|Map<Id,Product2>.get(Object)
+15:24:32.0 (12868381)|HEAP_ALLOCATE|[13]|Bytes:114
+15:24:32.0 (12876626)|SYSTEM_METHOD_ENTRY|[13]|System.debug(ANY)
+15:24:32.0 (12880668)|USER_DEBUG|[13]|DEBUG|Product Name Changed From GenWatt Diesel 1000kW - Deprecated Harderer to GenWatt Diesel 1000kW - Deprecated Harder
+15:24:32.0 (12886031)|SYSTEM_METHOD_EXIT|[13]|System.debug(ANY)
+15:24:32.0 (12888753)|STATEMENT_EXECUTE|[14]
+15:24:32.0 (12901097)|SYSTEM_METHOD_ENTRY|[14]|Map<Id,Product2>.get(Object)
+15:24:32.0 (12909579)|SYSTEM_METHOD_EXIT|[14]|Map<Id,Product2>.get(Object)
+15:24:32.0 (12917287)|HEAP_ALLOCATE|[14]|Bytes:46
+15:24:32.0 (12923873)|SYSTEM_METHOD_ENTRY|[14]|System.debug(ANY)
+15:24:32.0 (12928278)|USER_DEBUG|[14]|DEBUG|Product Code Changed From GC1060-1 to GC1060-2
+15:24:32.0 (12933311)|SYSTEM_METHOD_EXIT|[14]|System.debug(ANY)
+15:24:32.0 (12940535)|STATEMENT_EXECUTE|[15]
+15:24:32.0 (12948660)|SYSTEM_METHOD_ENTRY|[15]|Map<Id,Product2>.get(Object)
+15:24:32.0 (12956561)|SYSTEM_METHOD_EXIT|[15]|Map<Id,Product2>.get(Object)
+15:24:32.0 (12971326)|SYSTEM_METHOD_ENTRY|[15]|String.valueOf(Object)
+15:24:32.0 (12976206)|HEAP_ALLOCATE|[15]|Bytes:5
+15:24:32.0 (12985052)|SYSTEM_METHOD_EXIT|[15]|String.valueOf(Object)
+15:24:32.0 (12995144)|SYSTEM_METHOD_ENTRY|[15]|String.valueOf(Object)
+15:24:32.0 (12998532)|HEAP_ALLOCATE|[15]|Bytes:4
+15:24:32.0 (13006307)|SYSTEM_METHOD_EXIT|[15]|String.valueOf(Object)
+15:24:32.0 (13011161)|HEAP_ALLOCATE|[15]|Bytes:35
+15:24:32.0 (13016052)|SYSTEM_METHOD_ENTRY|[15]|System.debug(ANY)
+15:24:32.0 (13019307)|USER_DEBUG|[15]|DEBUG|isActive Changed From false to true
+15:24:32.0 (13027131)|SYSTEM_METHOD_EXIT|[15]|System.debug(ANY)
+15:24:32.0 (13034273)|SYSTEM_METHOD_ENTRY|[12]|system.ListIterator.hasNext()
+15:24:32.0 (13040851)|HEAP_ALLOCATE|[12]|Bytes:5
+15:24:32.0 (13046035)|SYSTEM_METHOD_EXIT|[12]|system.ListIterator.hasNext()
+15:24:32.0 (13056652)|VARIABLE_SCOPE_BEGIN|[12]|prod|Product2|true|false
+15:24:32.0 (13234491)|VARIABLE_ASSIGNMENT|[12]|prod|{"LastModifiedDate":"2018-01-02T23:24:32.000Z","IsDeleted":false,"CreatedById":"0051I000000zlxUQAQ","ProductCode":"GC1060-2","IsActive":true,"CreatedDate":"2017-10-25T22:52:04.000Z","Id":"01t1I0000016vrfQAA","LastModifiedById":"0051I000000zlxUQAQ","Name":"GenWatt Diesel 1000k (21 more) ...","SystemModstamp":"2018-01-02T23:24:32.000Z"}|0x1517c853
+15:24:32.0 (13245672)|STATEMENT_EXECUTE|[12]
+15:24:32.0 (13246772)|STATEMENT_EXECUTE|[13]
+15:24:32.0 (13264909)|SYSTEM_METHOD_ENTRY|[13]|Map<Id,Product2>.get(Object)
+15:24:32.0 (13277015)|SYSTEM_METHOD_EXIT|[13]|Map<Id,Product2>.get(Object)
+15:24:32.0 (13286164)|HEAP_ALLOCATE|[13]|Bytes:114
+15:24:32.0 (13293284)|SYSTEM_METHOD_ENTRY|[13]|System.debug(ANY)
+15:24:32.0 (13298571)|USER_DEBUG|[13]|DEBUG|Product Name Changed From GenWatt Diesel 1000kW - Deprecated Harderer to GenWatt Diesel 1000kW - Deprecated Harder
+15:24:32.0 (13304731)|SYSTEM_METHOD_EXIT|[13]|System.debug(ANY)
+15:24:32.0 (13307135)|STATEMENT_EXECUTE|[14]
+15:24:32.0 (13314837)|SYSTEM_METHOD_ENTRY|[14]|Map<Id,Product2>.get(Object)
+15:24:32.0 (13323430)|SYSTEM_METHOD_EXIT|[14]|Map<Id,Product2>.get(Object)
+15:24:32.0 (13333867)|HEAP_ALLOCATE|[14]|Bytes:46
+15:24:32.0 (13343356)|SYSTEM_METHOD_ENTRY|[14]|System.debug(ANY)
+15:24:32.0 (13350459)|USER_DEBUG|[14]|DEBUG|Product Code Changed From GC1060-1 to GC1060-2
+15:24:32.0 (13355740)|SYSTEM_METHOD_EXIT|[14]|System.debug(ANY)
+15:24:32.0 (13358401)|STATEMENT_EXECUTE|[15]
+15:24:32.0 (13366442)|SYSTEM_METHOD_ENTRY|[15]|Map<Id,Product2>.get(Object)
+15:24:32.0 (13374370)|SYSTEM_METHOD_EXIT|[15]|Map<Id,Product2>.get(Object)
+15:24:32.0 (13390078)|SYSTEM_METHOD_ENTRY|[15]|String.valueOf(Object)
+15:24:32.0 (13395169)|HEAP_ALLOCATE|[15]|Bytes:5
+15:24:32.0 (13403962)|SYSTEM_METHOD_EXIT|[15]|String.valueOf(Object)
+15:24:32.0 (13415169)|SYSTEM_METHOD_ENTRY|[15]|String.valueOf(Object)
+15:24:32.0 (13418739)|HEAP_ALLOCATE|[15]|Bytes:4
+15:24:32.0 (13430387)|SYSTEM_METHOD_EXIT|[15]|String.valueOf(Object)
+15:24:32.0 (13434528)|HEAP_ALLOCATE|[15]|Bytes:35
+15:24:32.0 (13438753)|SYSTEM_METHOD_ENTRY|[15]|System.debug(ANY)
+15:24:32.0 (13441665)|USER_DEBUG|[15]|DEBUG|isActive Changed From false to true
+15:24:32.0 (13446735)|SYSTEM_METHOD_EXIT|[15]|System.debug(ANY)
+15:24:32.0 (13452649)|SYSTEM_METHOD_ENTRY|[12]|system.ListIterator.hasNext()
+15:24:32.0 (13459281)|HEAP_ALLOCATE|[12]|Bytes:5
+15:24:32.0 (13464074)|SYSTEM_METHOD_EXIT|[12]|system.ListIterator.hasNext()
+15:24:32.0 (13472011)|VARIABLE_ASSIGNMENT|[12]|prod|null|
+15:24:32.0 (13483373)|METHOD_EXIT|[4]|01p1I00000FWXW5|ProductTriggerHelper.checkIfNameChanged(List<Product2>, Map<Id,Product2>)
+15:24:32.0 (13492706)|SYSTEM_MODE_EXIT|false
+15:24:32.0 (13499651)|METHOD_EXIT|[4]|01p1I00000FWXW5|ProductTriggerHelper.handleAfterUpdate(List<Product2>, Map<Id,Product2>)
+15:24:32.13 (13516971)|CUMULATIVE_LIMIT_USAGE
+15:24:32.13 (13516971)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:24:32.13 (13516971)|TOTAL_EMAIL_RECIPIENTS_QUEUED|0
+15:24:32.13 (13516971)|STATIC_VARIABLE_LIST|
+  char[]:DigitTens:0
+  long:serialVersionUID:0
+  long:serialVersionUID:0
+  double:MAX_VALUE:0
+  Boolean:FALSE:0
+  long:serialVersionUID:0
+  String:_sfdcSuppressedCodeLocations:0
+  double:MIN_VALUE:0
+  int:SIZE:0
+  double:NEGATIVE_INFINITY:0
+  int:MAX_VALUE:0
+  char[]:digits:0
+  double:NaN:0
+  Boolean:TRUE:0
+  int:MIN_VALUE:0
+  char[]:DigitOnes:0
+  String:_sfdcAdditionalCodeLocations:0
+  int:BYTES:0
+  int:MIN_EXPONENT:0
+  int[]:sizeTable:0
+  int:MAX_EXPONENT:0
+  int:SIZE:0
+  double:POSITIVE_INFINITY:0
+  double:MIN_NORMAL:0
+  int:BYTES:0
+
+15:24:32.13 (13516971)|CUMULATIVE_LIMIT_USAGE_END
+
+15:24:32.0 (14630278)|CODE_UNIT_FINISHED|ProductTrigger on Product2 trigger event AfterUpdate for [01t1I0000016vrf]
+15:24:32.0 (15396339)|EXECUTION_FINISHED
+15:24:32.21 (21699139)|CUMULATIVE_PROFILING_BEGIN
+15:24:32.21 (21699139)|CUMULATIVE_PROFILING|No profiling information for SOQL operations
+15:24:32.21 (21699139)|CUMULATIVE_PROFILING|No profiling information for SOSL operations
+15:24:32.21 (21699139)|CUMULATIVE_PROFILING|No profiling information for DML operations
+15:24:32.21 (21699139)|CUMULATIVE_PROFILING|method invocations|
+External entry point: public void invoke(): executed 1 time in 12 ms
+Trigger.ProductTrigger: line 4, column 1: public static void handleAfterUpdate(List<Product2>, Map<Id,Product2>): executed 1 time in 7 ms
+Class.ProductTriggerHelper.handleAfterUpdate: line 4, column 1: private static void checkIfNameChanged(List<Product2>, Map<Id,Product2>): executed 1 time in 6 ms
+Class.ProductTriggerHelper.checkIfNameChanged: line 11, column 1: public static List<SObject> checkForChangedFields(List<SObject>, Map<Id,SObject>, List<String>): executed 1 time in 3 ms
+Class.ProductTriggerHelper.checkIfNameChanged: line 10, column 1: global public List<String>(): executed 1 time in 0 ms
+Class.ProductTriggerHelper.checkIfNameChanged: line 12, column 1: global public System.Iterator iterator(): executed 5 times in 0 ms
+Class.ProductTriggerHelper.checkIfNameChanged: line 13, column 1: global public Object get(Object): executed 6 times in 0 ms
+Class.ProductTriggerHelper.checkIfNameChanged: line 14, column 1: global public Object get(Object): executed 6 times in 0 ms
+Class.ProductTriggerHelper.checkIfNameChanged: line 15, column 1: global public Object get(Object): executed 12 times in 0 ms
+Class.ProductTriggerHelper.checkForChangedFields: line 48, column 1: global public List<SObject>(): executed 1 time in 0 ms
+Class.ProductTriggerHelper.checkForChangedFields: line 49, column 1: global public System.Iterator iterator(): executed 5 times in 0 ms
+
+15:24:32.21 (21699139)|CUMULATIVE_PROFILING_END
