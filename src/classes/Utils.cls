@@ -25,4 +25,19 @@ public without sharing class Utils {
 
 		return changedRecords;
 	}
+
+	public static List<SObject> checkForChangedFields(List<SObject> newRecords, Map<Id, SObject> oldRecordMap, String field, String expectedValue){
+
+		List<SObject> changedRecordsOutput = new List<SObject>();
+		List<SObject> changedRecords = checkForChangedFields(newRecords, oldRecordMap, field);
+
+		for(SObject record : changedRecords){
+			if(record.get(field) == expectedValue){
+				changedRecordsOutput.add(record);
+			}
+		}
+
+		return changedRecordsOutput;
+	}
+	
 }
