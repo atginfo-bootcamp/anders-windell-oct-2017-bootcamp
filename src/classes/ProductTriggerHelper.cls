@@ -1,41 +1,38 @@
 public with sharing class ProductTriggerHelper {
 
 	public static void handleAfterUpdate(List<Product2> products, Map<Id, Product2> oldProductMap){
-		checkIfNameChanged(products, oldProductMap);
+		checkIfFieldsChanged(products, oldProductMap);
 	}
 
-	private static void checkIfNameChanged(List<Product2> products, Map<Id, Product2> oldProductMap){
+	private static void checkIfFieldsChanged(List<Product2> products, Map<Id, Product2> oldProductMap){
 		//Loop products
 		//Determine if product name changed, if so, print to console
-		List<String> trackChanges = new List<String>{'Name', 'ProductCode', 'fakeField'};
+		//List<String> trackChanges = new List<String>{'Name', 'Family', 'IsActive'};
+		List<String> trackChanges = Constants.getFields();
 		List<Product2> changedProducts = (List<Product2>) Utils.checkForChangedFields(products, oldProductMap, trackChanges);
 
+		if(changedProducts.size() > 0){
 
-		for(Product2 prod : changedProducts){
-			System.debug('Product Changed ' + prod);
+			User u = [SELECT Id, Name FROM User WHERE Username =: UserInfo.getUsername()];
+
+			List<Product_Change__c> productChangeRecords = new List<Product_Change__c>();
+			for(Product2 prod : changedProducts){
+				//System.debug('Product Changed ' + prod);
+
+				Product_Change__c productChangeRecord = new Product_Change__c(Product__c = prod.Id, Date_Changed__c = System.now(), Changed_User__c = u.Id);
+				productChangeRecords.add(productChangeRecord);
+			}
+
+			if(productChangeRecords.size() > 0){
+				insert productChangeRecords;
+			}
 		}
 
-		List<Product2> changedProductsWithExpectedPF = (List<Product2>) Utils.checkForChangedFields(products, oldProductMap, 'Family', 'Special');
+		//List<Product2> changedProductsWithExpectedPF = (List<Product2>) Utils.checkForChangedFields(products, oldProductMap, 'Family', 'Special');
 
-		for(Product2 product : changedProductsWithExpectedPF){
-			System.debug('Product family changed to special: ' + product);
-		}
+		//for(Product2 product : changedProductsWithExpectedPF){
+		//	System.debug('Product family changed to special: ' + product);
+		//}
 	}
-
-	//Old version before moving to use generic utility method
-	//private static void checkIfNameChanged(List<Product2> products, Map<Id, Product2> oldProductMap){
-	//	//Loop products
-	//	//Determine if product name changed, if so, print to console
-
-	//	for(Product2 prod : products){
-	//		if(prod.Name != oldProductMap.get(prod.Id).Name){
-	//			System.debug('Product Name Changed From ' + oldProductMap.get(prod.Id).Name + ' to ' + prod.Name);
-	//		}
-	//	}
-	//}
-
-	//Becky wants to know if productCode or isActive was changed also
-
-
 
 }
