@@ -2,31 +2,23 @@ global class EmailAllProductChanges implements Schedulable, Database.Batchable<s
 	
 	public String query;
 	public String bodyString = '';
-	Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
 	
 	global EmailAllProductChanges() {
 		
+		//mail = new Messaging.SingleEmailMessage();
 	}
 	
 	//Batchable Methods
 	global Database.QueryLocator start(Database.BatchableContext BC) {
 		query = 'SELECT Id, Date_Changed__c, Changed_User__c, Product__c FROM Product_Change__c WHERE Email_Send_Date__c = null';
 
-		Messaging.reserveSingleEmailCapacity(2);
-		List<String> toAddresses = Constants.toAddresses();
-		//List<String> ccAddresses = Constants.ccAddresses();
-
-		mail.setToAddresses(toAddresses);
-		//mail.setCcAddresses(ccAddresses);
-		mail.setSenderDisplayName(Constants.getSenderDisplayName());
-		mail.setSubject('Changed Products on ' + System.today());
-		mail.setBccSender(false);
+		
 
 
    		bodyString += 	'<table> ' +
    							'<tr>' +
-   								'<th>Product</th>' +
-   								'<th>Changed Date</th>' +
+   								'<th>Product</th>\t' +
+   								'<th>Changed Date</th>\t' +
    								'<th>Changed User</th>' +
    							'</tr>';
 
@@ -34,34 +26,61 @@ global class EmailAllProductChanges implements Schedulable, Database.Batchable<s
 	}
 
    	global void execute(Database.BatchableContext BC, List<Product_Change__c> scope) {
+   		System.debug('PRODUCT CHANGES ' + scope);
 		for(Product_Change__c productChange : scope){
 			buildBodyString(productChange);
 		}
+
 	}
 	
 	global void finish(Database.BatchableContext BC) {
+		Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
+		Messaging.reserveSingleEmailCapacity(1);
+		List<String> toAddresses = Constants.toAddresses();
+
+		mail.setToAddresses(toAddresses);
+		mail.setSenderDisplayName(Constants.getSenderDisplayName());
+		mail.setSubject('Changed Products on ' + System.today());
 		bodyString += '</table>';
+		System.debug('BODY STRING ' + bodyString);
 		mail.setHtmlBody(bodyString);
 		Messaging.sendEmail(new Messaging.SingleEmailMessage[] { mail });
-		updateProductChangeRecords();
-		createProductChangeEmailLog();
+		System.debug('Sent Email');
+		afterMessageUpdates();
 	}
 
 
 	public void buildBodyString(Product_Change__c productChangeRecord){
 		bodyString += 	'<tr>' +
-							'<td> ' + productChangeRecord.Product__c + '</td>' +
-							'<td> ' + productChangeRecord.Date_Changed__c + '</td>' +
+							'<td> ' + productChangeRecord.Product__c + '</td>\t' +
+							'<td> ' + productChangeRecord.Date_Changed__c + '</td>\t' +
 							'<td> ' + productChangeRecord.Changed_User__c + '</td>' +
 					   	'</tr>';
 	}
 
-	public void updateProductChangeRecords(){
-		
-	}
+	public void afterMessageUpdates(){
+		System.debug('Entered After Update Work');
+		Product_Change_Email_Log__c changeEmailLog = new Product_Change_Email_Log__c();
+		changeEmailLog.Date_Sent__c = System.now();
+		changeEmailLog.Sent_To__c = '';
+		for(String address : Constants.toAddresses()){
+			changeEmailLog.Sent_To__c = changeEmailLog.Sent_To__c  + address + '\n';
+		}
+		changeEmailLog.Email_Body__c = bodyString;
 
-	public void createProductChangeEmailLog(){
-		
+		insert changeEmailLog;
+
+
+		List<Product_Change__c> productChangeRecords = [SELECT Id, Date_Changed__c, 
+																Changed_User__c, Product__c 
+														FROM Product_Change__c 
+														WHERE Email_Send_Date__c = null];
+
+		for(Product_Change__c record : productChangeRecords){
+			record.Email_Send_Date__c = System.now();
+			record.Product_Change_Email_Log__c = changeEmailLog.Id;
+		}
+		update productChangeRecords;
 	}
 
 
