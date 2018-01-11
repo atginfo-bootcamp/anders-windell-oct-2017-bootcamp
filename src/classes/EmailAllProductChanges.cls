@@ -69,6 +69,7 @@ global class EmailAllProductChanges implements Schedulable, Database.Batchable<s
 		changeEmailLog.Email_Body__c = bodyString;
 
 		insert changeEmailLog;
+		System.debug('Inserted Change Email Log');
 
 
 		List<Product_Change__c> productChangeRecords = [SELECT Id, Date_Changed__c, 
@@ -81,6 +82,7 @@ global class EmailAllProductChanges implements Schedulable, Database.Batchable<s
 			record.Product_Change_Email_Log__c = changeEmailLog.Id;
 		}
 		update productChangeRecords;
+		System.debug('Updated Product CHange Records');
 	}
 
 
